@@ -9,24 +9,23 @@
   /* font */
   --font-color-dark: #0E7147;
   --font-color-light: #E4E4E4;
-
-  --shadow: 5px 7px 7px 0px rgba(65, 51, 65, 0.388);
+  /* shadow */
+  --shadow:  2px 4px 4px rgba(65, 51, 65, 0.388);
 }
 
 body {
   background: var(--color-primary);
   color: var(--font-color-light);
-  font-family: "IBM Plex Mono", sans-serif;
-  box-shadow: var(--shadow);
+  font-family: "IBM Plex Mono";
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h1 {
   color: var(--font-color-light);
-  font-family: "Rubik Mono One" sans-serif;
+  font-family: "Rubik Mono One";
   font-size: 6rem;
-  box-shadow: inset var(--shadow);
+  text-shadow: (--shadow);
 }
 
 h2,
@@ -39,7 +38,7 @@ h3 {
 h2 {
   font-size: 3rem;
   font-weight: 800;
-  box-shadow: inset var(--shadow)
+  text-shadow:  var(--shadow);
 
 }
 
@@ -53,7 +52,7 @@ i {
   color: var(--color-neutral);
   max-width: 2rem;
   max-height: 3rem;
-  box-shadow: var(--shadow);
+  text-shadow: var(--shadow);
 }
 
 button {
@@ -81,7 +80,7 @@ button-light {
 
 @media (min-width: 16rem) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   h1 {

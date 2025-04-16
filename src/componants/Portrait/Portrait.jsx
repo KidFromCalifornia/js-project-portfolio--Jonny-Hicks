@@ -1,5 +1,6 @@
 import photo from "../assets/img/Jhicks-PP.png";
 
+
 const Portrait = () => {
 return (
     <div className="portrait">
@@ -7,3 +8,5 @@ return (
 <span id="circleBehind"></span>
 </div>
 )}
+export default Portrait;
+// export default Portrait;

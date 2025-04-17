@@ -1,5 +1,6 @@
 import Portrait from "../../../componants/Portrait/Portrait"; 
 
+
 const AboutMe = () => { 
 return (
 <div className="about-me">
@@ -10,3 +11,5 @@ return (
 </div>
 <div className="portait"><Portrait/></div>
 </div>)}
+
+export default AboutMe;

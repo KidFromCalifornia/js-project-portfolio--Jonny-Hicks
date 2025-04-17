@@ -1,5 +1,5 @@
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./ButtonLinks.css";
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 

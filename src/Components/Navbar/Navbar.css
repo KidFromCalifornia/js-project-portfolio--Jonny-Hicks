@@ -3,7 +3,7 @@ ul {
   flex-direction: row;
   justify-content: start;
   list-style-type: none;
-  margin: 0 1rem;
+  margin: 0 .5rem;
 }
 
 li {
@@ -11,6 +11,13 @@ li {
 }
 a {
   color: var(--font-color-light);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
+text-decoration: none;
+}
+a :hover {
+ background-color: var(--secondary-color);
+  border-radius:.5rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
 }

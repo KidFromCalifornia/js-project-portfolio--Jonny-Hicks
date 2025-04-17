@@ -11,3 +11,6 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.button-links .fa-icon {
+  color: var(--font-color-light); }

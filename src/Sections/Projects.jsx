@@ -1,8 +1,8 @@
 import { Card } from "../Components/Card";
 import "./Projects.css";
-import "../Data/projects.json";
+import projects from "../Data/projects.json";
 
-export const Projects = ({ project }) => {
+export const Projects = ({ project = projects }) => {
   return (
     <>
       <h2>Projects</h2>

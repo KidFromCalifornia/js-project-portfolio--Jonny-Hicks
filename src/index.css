@@ -1,22 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap);
 
 :root {
-  --color-primary: #0E7147;
+  --color-primary: #0e7147;
   --color-secondry: #413341;
-  --color-accent: #EC9A29;
-  --color-neutral: #E4E4E4;
+  --color-accent: #ec9a29;
+  --color-neutral: #e4e4e4;
 
   /* font */
-  --font-color-dark: #0E7147;
-  --font-color-light: #E4E4E4;
+  --font-color-dark: #0e7147;
+  --font-color-light: #e4e4e4;
   /* shadow */
-  --shadow:  2px 4px 4px rgba(65, 51, 65, 0.388);
+  --shadow: 2px 4px 4px rgba(65, 51, 65, 0.388);
 }
 
 body {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--color-primary);
   color: var(--font-color-light);
   font-family: "IBM Plex Mono";
@@ -29,22 +29,20 @@ h1 {
   font-family: "Rubik Mono One";
   font-size: 6rem;
   text-shadow: var(--shadow);
-margin: .5rem;
+  margin: 0.5rem;
 }
 
 h2,
 h3 {
   color: var(--color-accent);
   font-family: "Azeret Mono" sans-serif;
-
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 800;
-  text-shadow:  var(--shadow);
-margin: .5rem;
-
+  text-shadow: var(--shadow);
+  margin: 0.5rem;
 }
 
 h3 {
@@ -53,19 +51,9 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-i {
-  color: var(--color-neutral);
-  max-width: 2rem;
-  max-height: 3rem;
-  text-shadow: var(--shadow);
-}
-
-
-
 @media (min-width: 16rem) {
   body {
     font-size: 1rem;
-
   }
 
   h1 {
@@ -74,19 +62,16 @@ i {
 
   h2 {
     font-size: 2rem;
-
   }
 
   h3 {
     font-size: 1.5rem;
-
   }
 
   a:hover {
-  color: var(--color-accent);
-  cursor: pointer;
-  transform: scale(1.5);
-  transition: all 0.3s ease-in-out;
-  
+    color: var(--color-accent);
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
   }
 }

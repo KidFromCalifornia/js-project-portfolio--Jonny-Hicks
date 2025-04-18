@@ -14,6 +14,9 @@
 }
 
 body {
+display: flex;
+flex-direction: column;
+align-items: center;
   background: var(--color-primary);
   color: var(--font-color-light);
   font-family: "IBM Plex Mono";
@@ -26,6 +29,7 @@ h1 {
   font-family: "Rubik Mono One";
   font-size: 6rem;
   text-shadow: var(--shadow);
+margin: .5rem;
 }
 
 h2,
@@ -36,14 +40,15 @@ h3 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   text-shadow:  var(--shadow);
+margin: .5rem;
 
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   box-shadow: var(--shadow);
 }
@@ -55,42 +60,16 @@ i {
   text-shadow: var(--shadow);
 }
 
-button {
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  text-align: center;
-}
 
-button-accent {
-  background: var(--color-accent);
-  color: var(--font-color-dark);
-  border: solid 2px var(--color-accent);
-}
 
-button-light {
-  background: var(--color-neutral);
-  color: var(--font-color-primary);
-  border: solid 2px var(--color-primary);
-}
-section{
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 16rem) {
   body {
-    font-size: 1.2rem;
+    font-size: 1rem;
+
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   h2 {

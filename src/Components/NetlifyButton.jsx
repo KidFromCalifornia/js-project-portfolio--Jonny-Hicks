@@ -1,11 +1,14 @@
-
 import "./NetlifyButton.css";
 
-export const NetlifyButton = ({ netlify }) => {
+export const NetlifyButton = ({ url }) => {
   return (
- 
-   <a href={netlify} target="_blank" rel="noopener noreferrer" className="netlify-button">
-  View Page
-</a>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="netlify-button"
+    >
+      View Page
+    </a>
   );
 };

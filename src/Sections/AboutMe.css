@@ -1,8 +1,8 @@
-.about-me {
-display: flex;
-justify-content: start;
-flex-direction:row;
+#about-me {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
-.about-text{
-width: 50vw;
-text-wrap: wrap;}
+.about-text {
+  text-wrap: wrap;
+}

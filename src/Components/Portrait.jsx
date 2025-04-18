@@ -1,5 +1,5 @@
-import photo from "../assets/img/Jhicks-PP.png";
-import "./Portrait.css";
+import photo from "../assets/img/Jhicks-PP.png"; // Ensure this path is correct
+import "./Portrait.css"; 
 
 export const Portrait = () => {
   return (

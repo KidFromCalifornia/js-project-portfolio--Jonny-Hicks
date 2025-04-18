@@ -1,9 +1,14 @@
 import "./GithubButton.css";
 
-export const GithubButton = ({ github }) => {
+export const GithubButton = ({ url }) => {
   return (
- <a href={github} target="_blank" rel="noopener noreferrer" className="github-button">
-  Github
-</a>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="github-button"
+    >
+      Github
+    </a>
   );
 };

@@ -1,21 +1,20 @@
-import {Card} from "../Components/Card.jsx";
+import { Card } from "../Components/Card";
 import "./Projects.css";
+import "../Data/projects.json";
 
-
-export const Projects = (({projects, index}) => {
+export const Projects = ({ project }) => {
   return (
-    <section id="projects">
-      <h2> My Projects</h2>
-    
-        {projects.map((project) => (
+    <>
+      <h2>Projects</h2>
+      <div className="projects-card">
         <Card
-          key={index}
+          key={project.index}
           name={project.name}
           description={project.description}
-          icon={project.icon}
+          github={project.github}
+          netlify={project.netlify}
         />
-
-      ))}
-    </section>
+      </div>
+    </>
   );
-})
+};

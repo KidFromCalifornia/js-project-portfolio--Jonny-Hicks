@@ -11,9 +11,9 @@
         "CSS3",
         "JavaScript"
       ],
-      "discription": "A business site is a website that provides information about a company, its products or services, and its contact details. It serves as an online presence for the business and helps potential customers learn more about what the company offers.",
-      "netlify": "link",
-      "github": "link"
+      "description": "A business site is a website that provides information about a company, its products or services, and its contact details. It serves as an online presence for the business and helps potential customers learn more about what the company offers.",
+      "netlify": "#link",
+      "github": "#link"
     },
     {
       "index": 1,
@@ -26,9 +26,9 @@
         "TypeScript",
         "APIs"
       ],
-      "discription": "A weather app is a software application that provides users with current weather conditions, forecasts, and other meteorological information. It typically includes features such as temperature, humidity, wind speed, and radar maps.",
-      "netlify": "link",
-      "github": "link"
+      "description": "A weather app is a software application that provides users with current weather conditions, forecasts, and other meteorological information. It typically includes features such as temperature, humidity, wind speed, and radar maps.",
+      "netlify": "#link",
+      "github": "#link"
     }
   ]
 }

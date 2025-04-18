@@ -1,10 +1,9 @@
 import "./index.css"
 import "./Components/Card.css"
-import { AboutMe } from "./Sections/MainBody/About/AboutMe.jsx"
-import { Header } from "./Sections/Header/Head.jsx"
-
 import "./Data/projects.json"
-
+import { AboutMe } from "./Sections/AboutMe.jsx"
+import { Header } from "./Sections/Head.jsx"
+import { Projects } from "./Sections/Projects.jsx"
 
 
 
@@ -18,8 +17,8 @@ export const App = () => {
       <section>
         <AboutMe />
       </section>
-      <section>
-        <Card />
+     <section>
+        <Projects />
       </section>
     </>
   );

@@ -8,7 +8,7 @@ export const GithubButton = ({ url }) => {
       rel="noopener noreferrer"
       className="github-button"
     >
-      Github
+      <p>Github</p>
     </a>
   );
 };

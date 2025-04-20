@@ -1,16 +1,11 @@
 import "./Card.css";
-import { GithubButton } from "./GithubButton";
-import { NetlifyButton } from "./NetlifyButton";
 
-export const Card = ({ icon, name, description, github, netlify }) => {
+export const Card = ({ icon, name, description, index }) => {
   return (
-    <div className="card">
+    <div key={index} className="card">
+      <img src={icon} alt="" />
       <h3>{name}</h3>
       <p>{description}</p>
-      <div className="card-buttons">
-        {netlify && <NetlifyButton url={netlify} />}
-        {github && <GithubButton url={github} />}
-      </div>
     </div>
   );
 };

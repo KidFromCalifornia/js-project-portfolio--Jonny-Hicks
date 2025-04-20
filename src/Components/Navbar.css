@@ -1,22 +1,19 @@
-ul {
+.nav-links {
   display: flex;
   flex-direction: row;
   justify-content: start;
   list-style-type: none;
-  
 }
-
 
 a {
   color: var(--font-color-light);
   font-size: 1rem;
   font-weight: 600;
-text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-color: var(--color-accent);
+  color: var(--color-accent);
   cursor: pointer;
-transform: scale(1.5);
+  transform: scale(1.5);
   transition: all 0.3s ease-in-out;
-  
 }

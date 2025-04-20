@@ -8,7 +8,7 @@ export const NetlifyButton = ({ url }) => {
       rel="noopener noreferrer"
       className="netlify-button"
     >
-      View Page
+      <p>View Page </p>
     </a>
   );
 };

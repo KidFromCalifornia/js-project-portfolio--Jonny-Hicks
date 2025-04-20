@@ -1,4 +1,4 @@
-.github-button > a {
+.github-button {
   border-radius: 12px;
   box-shadow: var(--shadow);
   cursor: pointer;
@@ -11,12 +11,12 @@
   color: var(--font-color-primary);
   border: solid 2px var(--color-accent);
 }
-github-button > a:hover {
+.github-button:hover {
   background: var(--color-nuetral);
   color: var(--font-color-secondary);
   border: solid 2px var(--color-primary);
 }
-github-button > a:active {
+.github-button:active {
   border: transparent;
   box-shadow: inset var(--shadow);
 }

@@ -1,12 +1,12 @@
 {
-  "projects": [
+  "Updates": [
     {
       "index": 0,
       "name": "Techingo Week 1",
       "icon": "",
       "tags": ["week 1", "technigo", "update", "bootcamp"],
       "description": "Week 1 at Technigo's Web Developer Bootcamp is done!",
-      "Post": "https://www.linkedin.com/posts/hellojonnyhicks_week-1-is-in-the-books-as-i-start-learning-activity-7291098206157897729-VrMP?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
+      "post": "https://www.linkedin.com/posts/hellojonnyhicks_week-1-is-in-the-books-as-i-start-learning-activity-7291098206157897729-VrMP?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
     },
     {
       "index": 1,
@@ -18,7 +18,7 @@
     },
     {
       "index": 2,
-      "name": " Week 10 at Technigo",
+      "name": "Week 10 at Technigo",
       "icon": "",
       "tags": ["sprint 3", "week 10", "update", "bootcamp"],
       "description": "Week 10, Sprint 3 in the bag at Technigo’s Web Developer Boot Camp! ",
@@ -26,10 +26,10 @@
     },
     {
       "index": 3,
-      "name": " Career Week",
+      "name": "Career Week",
       "icon": "",
       "tags": ["Career week", "week 12", "update", "bootcamp"],
-      "description": "Week 10, Sprint 3 in the bag at Technigo’s Web Developer Boot Camp! ",
+      "description": "Week 12, Its been a busy career week at Technigo’s Web Developer Boot Camp! ",
       "post": "https://www.linkedin.com/posts/hellojonnyhicks_i-know-its-saturday-morning-but-career-activity-7316754779454492672-nPU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
     }
   ]

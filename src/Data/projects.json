@@ -5,18 +5,44 @@
       "name": "Business site",
       "icon": "faFilm",
       "tags": ["HTML5", "CSS3", "JavaScript"],
-      "description": "A business site is a website that provides information about a company, its products or services, and its contact details. It serves as an online presence for the business and helps potential customers learn more about what the company offers.",
-      "netlify": "#link",
-      "github": "#link"
+      "description": "My first-ever website, built during my Technigo bootcamp using HTML5, CSS3, and basic JavaScript. Created independently over three weeks with a focus on responsive design and clean code.",
+      "netlify": "https://midnight-matinee.netlify.app/",
+      "github": "https://github.com/Technigo/js-project-business-site"
     },
     {
       "index": 1,
-      "name": "Weather app",
+      "name": "Hack Week: Weather App",
       "icon": "faCloudSunRain",
-      "tags": ["HTML5", "CSS3", "JavaScript", "TypeScript", "APIs"],
-      "description": "A weather app is a software application that provides users with current weather conditions, forecasts, and other meteorological information. It typically includes features such as temperature, humidity, wind speed, and radar maps.",
-      "netlify": "#link",
-      "github": "#link"
+      "tags": ["HTML5", "CSS3", "JavaScript", "TypeScript", "APIs", "github"],
+      "description": "Our first collaborative team project, created during Hack Week, using a weather API along with TypeScript and Geolocation. I was primarily responsible for implementing the CSS and reviewing/testing the TypeScript to ensure a smooth and responsive user experience",
+      "netlify": "https://weatherapp-teamproject.netlify.app/",
+      "github": "https://github.com/KidFromCalifornia/weather-app-fire1"
+    },
+    {
+      "index": 2,
+      "name": "Recipe Library API",
+      "icon": "faFoodApple",
+      "tags": ["HTML5", "CSS3", "JavaScript", "APIs", "github"],
+      "description": "A responsive web application I designed and developed, allowing users to explore recipes based on cuisine, diet, or keyword, powered by the Spoonacular API. Using a Figma prototype as the foundation, I made personalized UI enhancements to optimize the mobile experience. Built with HTML, CSS, and JavaScript, the app features filtering, sorting, and a random recipe generator, offering an engaging and seamless user experience across devices.",
+      "netlify": "https://keepcooking.netlify.app/",
+      "github": "https://github.com/KidFromCalifornia/js-project-recipe-library"
+    },
+    {
+      "index": 3,
+      "name": "Acecessibility App",
+      "icon": "faaccessibility",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "WCAG",
+        "github",
+        "accessibility"
+      ],
+      "description": "Built with semantic HTML, responsive CSS, and JavaScript, Typescript, the app includes full keyboard navigation, making it inclusive for users with diverse needs. I collaborated closely with my teammates on planning and implementation, with a strong focus on clean, accessible code and intuitive UI/UX design.",
+      "netlify": "https://fire2accessibility.netlify.app/",
+      "github": "https://github.com/KidFromCalifornia/js-project-accessibility"
     }
   ]
 }

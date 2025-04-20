@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "index": 0,
+      "name": "Techingo Week 1",
+      "icon": "",
+      "tags": ["week 1", "technigo", "update", "bootcamp"],
+      "description": "Week 1 at Technigo's Web Developer Bootcamp is done!",
+      "Post": "https://www.linkedin.com/posts/hellojonnyhicks_week-1-is-in-the-books-as-i-start-learning-activity-7291098206157897729-VrMP?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
+    },
+    {
+      "index": 1,
+      "name": "1 month at Technigo",
+      "icon": "",
+      "tags": ["1st month", "technigo", "update", "bootcamp"],
+      "description": "Can’t believe the first month of Technigo’s Boot Camp is already done!",
+      "post": "https://www.linkedin.com/posts/hellojonnyhicks_midnight-matin%C3%A9e-activity-7299724226599546880-aY0s?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
+    },
+    {
+      "index": 2,
+      "name": " Week 10 at Technigo",
+      "icon": "",
+      "tags": ["sprint 3", "week 10", "update", "bootcamp"],
+      "description": "Week 10, Sprint 3 in the bag at Technigo’s Web Developer Boot Camp! ",
+      "post": "https://www.linkedin.com/posts/hellojonnyhicks_webdevelopment-technigo-careerweek-activity-7313872699846524928-a36h?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
+    },
+    {
+      "index": 3,
+      "name": " Career Week",
+      "icon": "",
+      "tags": ["Career week", "week 12", "update", "bootcamp"],
+      "description": "Week 10, Sprint 3 in the bag at Technigo’s Web Developer Boot Camp! ",
+      "post": "https://www.linkedin.com/posts/hellojonnyhicks_i-know-its-saturday-morning-but-career-activity-7316754779454492672-nPU9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABikZJgBl-hZb8ulb9rueAjNjFT-iGguBfw"
+    }
+  ]
+}

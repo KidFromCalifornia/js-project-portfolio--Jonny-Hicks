@@ -6,9 +6,9 @@ export const NetlifyButton = ({ url }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="netifly-button"
+      className="netlify button"
     >
-      View Page
+      Demo
     </a>
   );
 };

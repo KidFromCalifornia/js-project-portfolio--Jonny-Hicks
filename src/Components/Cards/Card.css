@@ -1,17 +1,23 @@
 .card {
   padding: 0.5rem;
-  margin: 1rem;
-  max-width: 19rem;
+  margin: 0.5rem;
+  max-width: 18.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
+  gap: 1rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .card:hover {
-  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
+  box-shadow: inset var(--shadow);
+  border: 1px solid var(--color-secondary);
+  border-radius: 1rem;
 }
 
 .card-buttons {

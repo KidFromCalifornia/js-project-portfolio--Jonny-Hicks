@@ -8,19 +8,3 @@
   padding: 1rem;
   gap: 1rem;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 20rem;
-  height: 100%;
-  margin: 0.5rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  color: var(--font-color-primary);
-  background-color: transparent;
-
-  text-align: center;
-}

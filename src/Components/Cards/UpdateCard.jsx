@@ -8,7 +8,7 @@ export const UpdateCard = ({ icon, name, description, index, post }) => {
       <h3>{name}</h3>
       <p>{description}</p>
       <ul className="card-buttons">
-        <li className="post-button">
+        <li>
           <PostButton url={post} />
         </li>
       </ul>

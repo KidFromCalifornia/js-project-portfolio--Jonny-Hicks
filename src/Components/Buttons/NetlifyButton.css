@@ -1,4 +1,4 @@
-.netlify-button {
+.netlify {
   border-radius: 1rem;
   box-shadow: var(--shadow);
   cursor: pointer;
@@ -11,14 +11,14 @@
   color: var(--font-color-primary);
   border: solid 2px var(--color-primary);
 }
-.netlify-button:hover {
+.netlify:hover {
   background: var(--color-primary);
   color: var(--font-color-secondary);
 }
-.netlify-button:active {
+.netlify:active {
   border: transparent;
   box-shadow: inset var(--shadow);
 }
-.netlify-button > li {
+.netlify > li {
   list-style-type: none;
 }

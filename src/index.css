@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #0e7147;
-  --color-secondry: #413341;
+  --color-secondary: #413341;
   --color-accent: #ec9a29;
   --color-neutral: #e4e4e4;
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 h4 {
@@ -117,7 +117,7 @@ footer {
   width: 100vw;
   flex-direction: column;
   height: auto;
-  background-color: var(--color-secondry);
+  background-color: var(--color-secondary);
 }
 @media (min-width: 16rem) {
   body {

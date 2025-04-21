@@ -18,14 +18,3 @@
   border: transparent;
   box-shadow: inset var(--shadow);
 }
-.post-button > li {
-  list-style-type: none;
-}
-.post-button > li > a {
-  color: var(--font-color-primary);
-  text-decoration: none;
-  list-style-type: none;
-}
-.post-button > li > a:hover {
-  color: var(--font-color-secondary);
-}

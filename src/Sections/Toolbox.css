@@ -1,0 +1,23 @@
+.toolbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tech-skills > li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-neutral);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  padding-bottom: 0.5rem;
+}
+.tech-skills {
+  padding: 1rem;
+  max-width: 18.5rem;
+}

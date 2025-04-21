@@ -1,4 +1,6 @@
 import photo from "../assets/img/Jhicks-PP.png";
+import "./Portrait.css";
+
 export const Portrait = () => {
   return (
     <div className="portrait">

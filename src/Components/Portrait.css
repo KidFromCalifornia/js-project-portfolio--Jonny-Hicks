@@ -1,4 +1,4 @@
-
-img{
-width: 20rem;
-height: auto;}
+.portrait > img {
+  width: 100%;
+  height: auto;
+}

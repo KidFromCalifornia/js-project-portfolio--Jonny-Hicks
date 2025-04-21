@@ -1,18 +1,13 @@
 .button-links {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   list-style-type: none;
 }
-li {
+.button-links > li {
   margin: 0 0.5rem;
 }
-a {
-  color: var(--font-color-light);
-  font-size: 1.5rem;
+.button-links > li > a {
+  font-size: 1rem;
   font-weight: 600;
-}
-
-.button-links .fa-icon {
-  color: var(--font-color-light);
 }

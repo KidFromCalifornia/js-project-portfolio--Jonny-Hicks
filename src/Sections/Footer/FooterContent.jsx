@@ -1,6 +1,6 @@
-import { FooterBackground } from "../Components/FooterBackground";
+import { FooterBackground } from "../../Components/FooterBackground";
 import "./FooterContent.css";
-import { Contacts } from "../Components/ContactDetails";
+import { Contacts } from "../../Components/ContactDetails";
 
 export const Footer = () => {
   return (

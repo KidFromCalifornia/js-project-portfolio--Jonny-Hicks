@@ -1,8 +1,0 @@
-#about-me {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-.about-text {
-  text-wrap: wrap;
-}

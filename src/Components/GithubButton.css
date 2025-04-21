@@ -12,7 +12,7 @@
   border: solid 2px var(--color-accent);
 }
 .github-button:hover {
-  background: var(--color-nuetral);
+  background: var(--color-netral);
   color: var(--font-color-secondary);
   border: solid 2px var(--color-primary);
 }

@@ -1,19 +1,27 @@
 .nav-links {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   list-style-type: none;
+  padding: 0;
+  gap: 0.5rem;
 }
 
-a {
-  color: var(--font-color-light);
-  font-size: 1rem;
-  font-weight: 600;
+.nav-links > li {
   text-decoration: none;
 }
-a:hover {
+.nav-links > a:hover {
   color: var(--color-accent);
   cursor: pointer;
   transform: scale(1.5);
   transition: all 0.3s ease-in-out;
+}
+.nav-links > li > a {
+  text-decoration: none;
+  font-family: "", sans-serif;
+  color: var(--font-color-light);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: var(--shadow);
+  margin: 0.5rem;
 }

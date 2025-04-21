@@ -10,7 +10,14 @@
   --font-color-dark: #0e7147;
   --font-color-light: #e4e4e4;
   /* shadow */
-  --shadow: 2px 4px 4px rgba(65, 51, 65, 0.388);
+  --shadow: 0px 2px 3px rgba(65, 51, 65, 0.388);
+
+  /* FONTS */
+  --font-Header: "Rubik Mono One", sans-serif;
+  --font-header-2-3: "Azeret Mono", sans-serif;
+  --font-body: "IBM Plex Mono", sans-serif;
+  --a-font: "Azeret Mono", sans-serif;
+  --button-font: "IBM Plex Mono", sans-serif;
 }
 
 body {
@@ -18,16 +25,16 @@ body {
   flex-direction: column;
   align-items: center;
   background: var(--color-primary);
-  color: var(--font-color-light);
-  font-family: "IBM Plex Mono";
-  font-size: 1rem;
-  font-weight: 400;
+
+  width: 100vw;
+  height: auto;
 }
 
 h1 {
   color: var(--font-color-light);
-  font-family: "Rubik Mono One";
+  font-family: var(--font-Header);
   font-size: 6rem;
+  font-weight: 700;
   text-shadow: var(--shadow);
   margin: 0.5rem;
 }
@@ -36,7 +43,9 @@ h2,
 h3,
 h4 {
   color: var(--color-accent);
-  font-family: "Azeret Mono" sans-serif;
+  font-family: var(--font-header-2-3);
+  text-shadow: var(--shadow);
+  margin: 0;
 }
 
 h2 {
@@ -49,9 +58,53 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
   box-shadow: var(--shadow);
 }
+p {
+  color: var(--font-color-light);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-shadow: var(--shadow);
+  margin: 0.5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  width: 100vw;
+  flex-direction: column;
+  height: auto;
+}
 @media (min-width: 16rem) {
   body {
     font-size: 1rem;
@@ -73,7 +126,6 @@ h3 {
   }
 
   a:hover {
-    color: var(--color-accent);
     cursor: pointer;
     transform: scale(1.5);
     transition: all 0.3s ease-in-out;

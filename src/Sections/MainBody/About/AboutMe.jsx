@@ -1,10 +1,10 @@
 import "./AboutMe.css";
-import { Portrait } from "../Components/Portrait";
-import { ButtonLinks } from "../Components/ButtonLinks";
+import { Portrait } from "../../../Components/Portrait";
+import { ButtonLinks } from "../../../Components/ButtonLinks";
 
 export const AboutMe = () => {
   return (
-    <div id="about-me">
+    <section id="about-me">
       <div className="about-text">
         <h1>
           Jonny <br /> Hicks
@@ -27,6 +27,6 @@ export const AboutMe = () => {
       <div className="portrait">
         <Portrait />
       </div>
-    </div>
+    </section>
   );
 };

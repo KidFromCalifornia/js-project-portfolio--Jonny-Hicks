@@ -1,8 +1,26 @@
 .card {
-  background-color: var(--color-neutral);
-  border-radius: .5rem;
-  box-shadow:var(--shadow);
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem;
-  box-shadow: inset var(--shadow);
+  max-width: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+li {
+  list-style-type: none;
 }

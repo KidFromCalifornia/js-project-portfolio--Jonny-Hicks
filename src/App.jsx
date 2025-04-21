@@ -7,6 +7,7 @@ import { Toolbox } from "./Sections/Toolbox.jsx";
 import { Skills } from "./Sections/Skills.jsx";
 //import { Updates } from "./Sections/Updates.jsx";
 import { Footer } from "./Sections/Footer/FooterContent.jsx";
+import { Updates } from "./Sections/Updates.jsx";
 
 export const App = () => {
   console.log("App.jsx");
@@ -20,6 +21,7 @@ export const App = () => {
         <Skills />
         <Projects />
         <Toolbox />
+        <Updates />
       </main>
       <footer>
         <Footer />

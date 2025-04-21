@@ -7,7 +7,7 @@ import updates from "../../../data/Updates.json";
 export const Updates = () => {
   return (
     <section id="updates">
-      <div className="h3-title">
+      <div className="h2-title">
         <h2>Updates</h2>
       </div>
       <div className="updates-container">

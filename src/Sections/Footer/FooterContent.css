@@ -19,9 +19,6 @@
   width: 100vw;
 }
 
-.button-links {
-  text-decoration: none;
-}
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -29,4 +26,14 @@
   align-items: start;
   text-align: start;
   padding: 1rem;
+}
+.footer-content > .button-links > li > a > svg {
+  font-size: 2rem;
+  color: var(--color-neutral);
+}
+
+.footer-content > .button-links > li > a > svg:hover {
+  color: var(--color-accent);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }

@@ -6,6 +6,7 @@
 }
 .button-links > li {
   margin: 0 0.5rem;
+  text-decoration: none;
 }
 .button-links > li > a {
   font-size: 1rem;

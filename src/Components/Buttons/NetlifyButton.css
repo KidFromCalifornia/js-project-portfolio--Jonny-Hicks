@@ -1,12 +1,4 @@
 .netlify {
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  text-align: center;
   background: var(--color-neutral);
   color: var(--font-color-primary);
   border: solid 2px var(--color-primary);

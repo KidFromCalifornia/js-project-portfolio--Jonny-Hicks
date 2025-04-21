@@ -4,11 +4,11 @@ import projects from "../../../Data/projects.json";
 
 export const Projects = () => {
   return (
-    <section>
-      <div className="h3-title">
+    <section id="projects">
+      <div className="h2-title">
         <h2>Projects</h2>
       </div>
-      <div id="projects">
+      <div className="projects">
         {projects.projects.map((project) => (
           <div key={project.index} className="project-card">
             <Card

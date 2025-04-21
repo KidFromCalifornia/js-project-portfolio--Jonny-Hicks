@@ -6,7 +6,7 @@ export const NetlifyButton = ({ url }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="netlify button"
+      className="netlify links"
     >
       Demo
     </a>

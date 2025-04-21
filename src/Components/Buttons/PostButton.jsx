@@ -6,7 +6,7 @@ export const PostButton = ({ url }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="post button"
+      className="post links"
     >
       Read
     </a>

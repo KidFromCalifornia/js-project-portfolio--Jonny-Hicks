@@ -25,3 +25,13 @@
 .portrait {
   width: 50;
 }
+.about-text > .button-links > li > a > svg {
+  font-size: 2rem;
+  color: var(--color-neutral);
+}
+
+.about-text > .button-links > li > a > svg:hover {
+  color: var(--color-accent);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}

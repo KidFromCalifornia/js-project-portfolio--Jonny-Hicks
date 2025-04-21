@@ -1,23 +1,14 @@
-.post-button {
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  text-align: center;
+.post {
   background: var(--color-neutral);
   color: var(--color-primary);
   border: solid 2px var(--color-primary);
 }
-.post-button:hover {
-  background: var(--color-primary);
-  color: var(--color-neutral);
-  border: solid 1px var(--color-secondary);
+.post:hover {
+  color: var(--color-secondary);
+  border: solid 2px var(--color-accent);
 }
 
-.post-button:active {
+.post:active {
   border: 2px solid transparent;
   box-shadow: inset var(--shadow);
 }

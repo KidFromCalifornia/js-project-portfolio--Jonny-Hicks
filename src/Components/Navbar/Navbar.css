@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  list-style-type: none;
-  padding: 0;
+
   gap: 0.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .nav-links > li {
   text-decoration: none;
 }
-.nav-links > a:hover {
+.nav-links > li > a:hover {
   color: var(--color-accent);
   cursor: pointer;
   transform: scale(1.5);
@@ -18,10 +19,10 @@
 }
 .nav-links > li > a {
   text-decoration: none;
-  font-family: "", sans-serif;
+  font-family: var(--a-font);
   color: var(--font-color-light);
   font-size: 1.5rem;
   font-weight: 400;
   text-shadow: var(--shadow);
-  margin: 0.5rem;
+  margin: 0;
 }

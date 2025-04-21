@@ -1,8 +1,8 @@
-import { ButtonLinks } from "./ButtonLinks";
+import { ButtonLinks } from "./ButtonLinks/ButtonLinks";
 
 export const Contacts = () => {
   return (
-    <div className="contacts">
+    <>
       <ul>
         <li>
           <h4>Jonny Hicks </h4>
@@ -15,6 +15,6 @@ export const Contacts = () => {
         </li>
       </ul>
       <ButtonLinks />
-    </div>
+    </>
   );
 };

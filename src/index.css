@@ -78,6 +78,19 @@ ul {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
+
+svg {
+  color: var(--color-accent);
+}
+
+svg:hover {
+  color: var(--color-neutral);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 section {
   display: flex;
@@ -104,6 +117,7 @@ footer {
   width: 100vw;
   flex-direction: column;
   height: auto;
+  background-color: var(--color-secondry);
 }
 @media (min-width: 16rem) {
   body {

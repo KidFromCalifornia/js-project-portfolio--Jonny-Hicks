@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="footer-background">
         <FooterBackground />
       </div>
-      <div className="footer-content">
+      <div className="footer-contacts">
         <Contacts />
       </div>
     </>

@@ -1,4 +1,4 @@
-import { Card } from "../../../Components/Card";
+import { Card } from "../../../Components/Cards/Card";
 import "./Projects.css";
 import projects from "../../../Data/projects.json";
 
@@ -8,7 +8,7 @@ export const Projects = () => {
       <div className="h3-title">
         <h2>Projects</h2>
       </div>
-      <div className="projects">
+      <div id="projects">
         {projects.projects.map((project) => (
           <div key={project.index} className="project-card">
             <Card

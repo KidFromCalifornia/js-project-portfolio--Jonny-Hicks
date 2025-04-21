@@ -6,7 +6,7 @@ export const Navbar = () => {
       <div>
         <ul className="nav-links">
           <li>
-            <a href="#Aboutme">About me</a>
+            <a href="#aboutme">About me</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
@@ -18,10 +18,10 @@ export const Navbar = () => {
             <a href="#toolbox">Toolbox</a>
           </li>
           <li>
-            <a href="#Updates">Updates</a>
+            <a href="#updates">Updates</a>
           </li>
           <li>
-            <a href="#Contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 import "./Card.css";
-import { PostButton } from "./PostButton.jsx";
+import { PostButton } from "../Buttons/PostButton.jsx";
 
 export const UpdateCard = ({ icon, name, description, index, post }) => {
   return (

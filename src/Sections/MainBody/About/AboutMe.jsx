@@ -1,6 +1,6 @@
 import "./AboutMe.css";
-import { Portrait } from "../../../Components/Portrait";
-import { ButtonLinks } from "../../../Components/ButtonLinks";
+import { Portrait } from "../../../Components/Portrait/Portrait";
+import { ButtonLinks } from "../../../Components/ButtonLinks/ButtonLinks";
 
 export const AboutMe = () => {
   return (

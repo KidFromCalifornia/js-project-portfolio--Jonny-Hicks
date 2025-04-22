@@ -127,6 +127,10 @@ footer {
   height: auto;
   background-color: var(--color-secondary);
 }
+.project-icons > path,
+.footer-contacts > ul > li svg path {
+  fill: var(--color-accent);
+}
 
 @media (min-width: 16rem) {
   body {

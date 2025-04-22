@@ -1,9 +1,20 @@
 import { ButtonLinks } from "./ButtonLinks/ButtonLinks";
+import styled from "styled-components";
+const ContactContainer = styled.ul`
+  padding: 0;
+  margin: 0;
+  max-width: 20vw
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+`;
 
 export const Contacts = () => {
   return (
     <>
-      <ul>
+      <ContactContainer>
         <li>
           <h4>Jonny Hicks </h4>
         </li>
@@ -13,7 +24,7 @@ export const Contacts = () => {
         <li>
           <h4>hello.jonnyhicks@gmail.com</h4>
         </li>
-      </ul>
+      </ContactContainer>
       <ButtonLinks />
     </>
   );

@@ -1,17 +1,21 @@
-import "./Card.css";
-import { PostButton } from "../Buttons/PostButton.jsx";
+import {
+  CardContainer,
+  BaseIcon,
+  BaseButtonList,
+  BaseButtonItem,
+} from "./CardStyles.jsx";
+import { OpenLink } from "../Buttons/OpenLink";
 
 export const UpdateCard = ({ icon, name, description, index, post }) => {
   return (
-    <div key={index} className="card">
-      <i className={icon}></i>
+    <CardContainer key={index}>
       <h3>{name}</h3>
       <p>{description}</p>
-      <ul className="card-buttons">
-        <li>
-          <PostButton url={post} />
-        </li>
-      </ul>
-    </div>
+      <BaseButtonList>
+        <BaseButtonItem>
+          <OpenLink url={post} buttonText="Read More" />
+        </BaseButtonItem>
+      </BaseButtonList>
+    </CardContainer>
   );
 };

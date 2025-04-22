@@ -1,32 +1,25 @@
-import "./Card.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GithubButton } from "../Buttons/GithubButton";
-import { NetlifyButton } from "../Buttons/NetlifyButton";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faUniversalAccess,
-  faFilm,
-  faUtensils,
-  faCloudSunRain,
-} from "@fortawesome/free-solid-svg-icons";
-
-// Preload icons into Font Awesome library
-library.add(faUniversalAccess, faFilm, faUtensils, faCloudSunRain);
+  CardContainer,
+  BaseIcon,
+  BaseButtonList,
+  BaseButtonItem,
+} from "./CardStyles";
+import { OpenLink } from "../Buttons/OpenLink";
 
 export const Card = ({ icon, name, description, netlify, github }) => {
   return (
-    <div className="card">
-      <FontAwesomeIcon icon={["fas", icon]} size="2x" />
+    <CardContainer className="card">
+      <BaseIcon icon={["fas", icon]} size="2x" className="project-icons" />
       <h3>{name}</h3>
       <p>{description}</p>
-      <ul className="card-buttons">
-        <li className="netlify-button">
-          <NetlifyButton url={netlify} />
-        </li>
-        <li className="github-button">
-          <GithubButton url={github} />
-        </li>
-      </ul>
-    </div>
+      <BaseButtonList>
+        <BaseButtonItem>
+          <OpenLink url={netlify} buttonText="Demo" />
+        </BaseButtonItem>
+        <BaseButtonItem>
+          <OpenLink url={github} buttonText="Github" />
+        </BaseButtonItem>
+      </BaseButtonList>
+    </CardContainer>
   );
 };

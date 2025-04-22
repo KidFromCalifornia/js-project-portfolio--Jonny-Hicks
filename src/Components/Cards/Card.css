@@ -30,3 +30,10 @@
 li {
   list-style-type: none;
 }
+
+.card > svg {
+  font-size: 10rem;
+  color: var(--color-accent);
+  filter: drop-shadow(var(--shadow));
+  max-width: fit-content;
+}

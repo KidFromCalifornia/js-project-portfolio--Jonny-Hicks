@@ -1,31 +1,30 @@
 import styled from "styled-components";
 
 const FooterTextBox = styled.div`
-  background-color: var(--color-secondary);
-  width: 100dvw;
-  height: fitcontent;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  flex-wrap: wrap;
-  font-case: uppercase;
+  overflow: hidden;
+  background-color: var(--color-secondary);
 `;
 const FooterText = styled.div`
   color: var(--color-primary);
-  font-size: 18rem;
+  font-size: 20rem;
   height: 100%;
-  text-transform: uppercase;
   font-weight: 900;
-  font-family: var(--font-header);
+  font-family: var(--font-body);
+  overflow: hidden;
+  position: relative;
 `;
+
 export const FooterBackground = () => {
   return (
     <FooterTextBox>
-      <FooterText style={{ gridRow: "1 / 3", gridColumn: "1 / 3" }}>
-        Lets
+      <FooterText style={{ gridRow: 2 / 4, gridColumn: 2 / 4 }}>
+        lets
       </FooterText>
-      <FooterText style={{ gridRow: "2 / 4", gridColumn: "2 / 4" }}>
-        talk
+      <FooterText style={{ gridColumn: 1 / 3, gridRow: 2 / 3 }}>
+        chat
       </FooterText>
     </FooterTextBox>
   );

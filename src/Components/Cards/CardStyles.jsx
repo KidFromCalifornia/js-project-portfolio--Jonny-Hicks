@@ -10,7 +10,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(faUniversalAccess, faFilm, faUtensils, faCloudSunRain);
 
 export const CardContainer = styled.div`
-  padding: 0.5rem;
   margin: 0.5rem;
   max-width: 18.5rem;
   display: flex;
@@ -22,7 +21,7 @@ export const CardContainer = styled.div`
   gap: 1rem;
   border: 2px solid transparent;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.05rem;
 `;
 
 export const BaseIcon = styled(FontAwesomeIcon)`

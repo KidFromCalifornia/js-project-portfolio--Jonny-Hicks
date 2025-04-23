@@ -1,9 +1,10 @@
-import { ButtonLinks } from "./ButtonLinks/ButtonLinks";
+import { ProfileLinks } from "./ProfileLinks/ProfileLinks";
 import styled from "styled-components";
+
 const ContactContainer = styled.ul`
   padding: 0;
   margin: 0;
-  max-width: 20vw
+
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -14,18 +15,18 @@ const ContactContainer = styled.ul`
 export const Contacts = () => {
   return (
     <>
-      <ContactContainer>
+      <ContactContainer className="footer-contacts">
         <li>
-          <h4>Jonny Hicks </h4>
+          <h2 style={{ margin: 0 }}>Jonny Hicks </h2>
         </li>
         <li>
-          <h4>+46 76 085 08 54 </h4>
+          <h3>+46 76 085 08 54 </h3>
         </li>
         <li>
           <h4>hello.jonnyhicks@gmail.com</h4>
         </li>
+        <ProfileLinks />
       </ContactContainer>
-      <ButtonLinks />
     </>
   );
 };

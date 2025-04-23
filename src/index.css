@@ -60,9 +60,8 @@ h3 {
   font-weight: 600;
 }
 h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  box-shadow: var(--shadow);
 }
 p {
   color: var(--font-color-light);
@@ -117,19 +116,22 @@ main {
 }
 
 footer {
-  display: flex;
   justify-content: start;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  width: 100vw;
-  flex-direction: column;
-  height: auto;
-  background-color: var(--color-secondary);
 }
+
 .project-icons > path,
 .footer-contacts > ul > li svg path {
   fill: var(--color-accent);
+}
+.profile-links > li > a > svg {
+  font-size: 2rem;
+  color: var(--color-neutral);
+}
+
+.profile-links > li > a > svg:hover {
+  color: var(--color-accent);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 16rem) {

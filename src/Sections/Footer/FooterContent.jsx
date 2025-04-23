@@ -6,14 +6,16 @@ const FooterContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  background-color: var(--color-secondary);
+  height: min-content;
 `;
 const Background = styled.div`
   grid-column: 1 / 4;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
 `;
 const FooterForeground = styled.div`
-  grid-column: 2 /4;
-  grid-row: 3/ 4;
+  grid-column: 3 /3;
+  grid-row: 2/ 3;
 `;
 export const Footer = () => {
   return (

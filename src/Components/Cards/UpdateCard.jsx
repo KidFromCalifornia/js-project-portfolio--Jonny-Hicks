@@ -6,7 +6,7 @@ import {
 } from "./CardStyles.jsx";
 import { OpenLink } from "../Buttons/OpenLink";
 
-export const UpdateCard = ({ icon, name, description, index, post }) => {
+export const UpdateCard = ({ name, description, index, post }) => {
   return (
     <CardContainer key={index}>
       <h3>{name}</h3>

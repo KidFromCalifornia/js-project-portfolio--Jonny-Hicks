@@ -18,23 +18,53 @@ const AboutText = styled.div`
   padding: 1rem;
   margin: 0.5rem;
   max-width: 50%;
+  box-sizing: border-box;
 `;
 const AboutTextP = styled.p`
   overflow-wrap: break-word;
   color: var(--font-color-light);
   font-size: 1rem;
+  padding: 0.5rem;
 `;
 const AboutMeH2 = styled.h2`
   color: var(--color-accent);
 `;
 
+const AboutMeH1 = styled.h1`
+  color: var(--font-color-light);
+  font-size: 7rem;
+  font-weight: 900;
+ filter: url(#inset-shadow);
+`;
+
+const InsetShadowFilter = () => (
+  <svg style={{ display: "none" }}>
+    <defs>
+      <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feComponentTransfer in="SourceAlpha">
+          <feFuncA type="table" tableValues="1 0" />
+        </feComponentTransfer>
+        <feGaussianBlur stdDeviation="4" />
+        <feOffset dx="0" dy="0" result="offsetblur" />
+        <feFlood floodColor="black" result="color" />
+        <feComposite in2="offsetblur" operator="in" />
+        <feComposite in2="SourceAlpha" operator="in" />
+        <feMerge>
+          <feMergeNode in="SourceGraphic" />
+          <feMergeNode />
+        </feMerge>
+      </filter>
+    </defs>
+  </svg>
+);
 export const AboutMe = () => {
   return (
     <AboutMeContainer id="about-me">
       <AboutText>
-        <h1>
+        <AboutMeH1>
+          <InsetShadowFilter />
           Jonny <br /> Hicks
-        </h1>
+        </AboutMeH1>
         <AboutMeH2>I Am a Web Developer</AboutMeH2>
         <AboutTextP>
           I am a creative problem solver who has transitioned into web

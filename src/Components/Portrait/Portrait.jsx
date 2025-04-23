@@ -1,26 +1,28 @@
 import photo from "../../assets/img/PP-JHicks.png";
 import styled from "styled-components";
+import { SvgShadow } from "../SvgShadow";
 
 const PhotoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  align-content: end;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Photo = styled.img`
-  width: 330px;
-  height: 390px;
+  width: 350px;
+  height: auto;
   position: absolute;
+  z-index: 2;
+  transform: translate(4px, -20px);
 `;
 
 const CircleBehind = styled.svg`
   position: relative;
   width: 390px;
   height: 390px;
-  z-index: -1;
+  z-index: 1;
+  filter: url(#inset-shadow);
 `;
 
 const Circle = styled.circle`
@@ -33,10 +35,12 @@ const Circle = styled.circle`
 export const Portrait = () => {
   return (
     <PhotoContainer className="portrait">
+      <Photo src={photo} alt="Portrait of Jonny Hicks" />
       <CircleBehind>
-        <Photo src={photo} alt="Portrait of Jonny Hicks" />
-        <Circle cx="185" cy="185" r="185" />
+        <SvgShadow />
+        <Circle cx="195" cy="195" r="195" />
       </CircleBehind>
+      <Photo src={photo} alt="Portrait of Jonny Hicks" />
     </PhotoContainer>
   );
 };

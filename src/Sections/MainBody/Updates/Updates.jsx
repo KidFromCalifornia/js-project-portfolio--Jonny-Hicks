@@ -1,16 +1,19 @@
 import { UpdateCard } from "../../../Components/Cards/UpdateCard";
-import "./updates.css";
+import {
+  SectionContainer,
+  CardContainer,
+} from "../../../Components/SectionStyling";
 import updates from "../../../data/Updates.json";
 
 // Ensure updates has a valid structure
 
 export const Updates = () => {
   return (
-    <section id="updates">
+    <SectionContainer id="updates">
       <div className="h2-title">
         <h2>Updates</h2>
       </div>
-      <div className="updates-container">
+      <CardContainer className="updates-container">
         {updates.updates.map((update, index) => (
           <div key={index} className="updates-card">
             <UpdateCard
@@ -21,7 +24,7 @@ export const Updates = () => {
             />
           </div>
         ))}
-      </div>
-    </section>
+      </CardContainer>
+    </SectionContainer>
   );
 };

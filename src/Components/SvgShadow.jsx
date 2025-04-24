@@ -5,8 +5,8 @@ export const SvgShadow = () => {
         <feComponentTransfer in="SourceAlpha">
           <feFuncA type="table" tableValues="1 0" />
         </feComponentTransfer>
-        <feGaussianBlur stdDeviation="4" />
-        <feOffset dx="0" dy="0" result="offsetblur" />
+        <feGaussianBlur stdDeviation="3" />
+        <feOffset dx="3" dy="3" result="offsetblur" />
         <feFlood floodColor="var(--color-secondary)" result="color" />
         <feComposite in2="offsetblur" operator="in" />
         <feComposite in2="SourceAlpha" operator="in" />

@@ -11,7 +11,9 @@ const ContactContainer = styled.ul`
   align-items: start;
   text-align: left;
 `;
-
+const ContactH2 = styled.h2`
+  color: var(--color-accent);
+`;
 export const Contacts = () => {
   return (
     <>

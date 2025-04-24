@@ -1,32 +1,13 @@
 import { Card } from "../../../Components/Cards/Card";
-
+import {
+  SectionContainer,
+  CardContainer,
+} from "../../../Components/SectionStyling";
 import projects from "../../../Data/projects.json";
-import styled from "styled-components";
-
-const ProjectsContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 1rem;
-`;
-const CardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  text-align: center;
-  padding: 1rem;
-  margin: 0.5rem;
-  max-width: 100%;
-  box-sizing: border-box;
-`;
 
 export const Projects = () => {
   return (
-    <ProjectsContainer id="projects">
+    <SectionContainer id="projects">
       <h2>Projects</h2>
 
       <CardContainer className="projects">
@@ -42,6 +23,6 @@ export const Projects = () => {
           </div>
         ))}
       </CardContainer>
-    </ProjectsContainer>
+    </SectionContainer>
   );
 };

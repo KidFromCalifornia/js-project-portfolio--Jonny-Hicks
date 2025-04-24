@@ -3,14 +3,15 @@
 :root {
   --color-primary: #0e7147;
   --color-secondary: #413341;
-  --color-accent: #ec9a29;
+  --color-accent: #ffbc3e;
   --color-neutral: #e4e4e4;
 
   /* font */
   --font-color-dark: #0e7147;
   --font-color-light: #e4e4e4;
   /* shadow */
-  --shadow: 0px 2px 3px rgba(65, 51, 65, 0.388);
+  --shadow: 0px 2px 3px rgba(65, 51, 65, 0.8);
+  --shadow-color: rgba(65, 51, 65, 0.8);
 
   /* FONTS */
   --font-Header: "Rubik Mono One", sans-serif;
@@ -25,9 +26,23 @@ body {
   flex-direction: column;
   align-items: center;
   background: var(--color-primary);
-
+  position: relative;
   width: 100vw;
   height: auto;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100" height="100" filter="url(%23grain)" /></svg>')
+    repeat;
+  opacity: 0.3; /* Adjust grain intensity */
+  pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 h1 {

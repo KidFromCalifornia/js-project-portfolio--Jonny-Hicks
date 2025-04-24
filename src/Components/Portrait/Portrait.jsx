@@ -7,6 +7,7 @@ const PhotoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(1.2);
 `;
 
 const Photo = styled.img`
@@ -22,14 +23,13 @@ const CircleBehind = styled.svg`
   width: 390px;
   height: 390px;
   z-index: 1;
-  filter: url(#inset-shadow);
 `;
 
 const Circle = styled.circle`
   stroke: var(--color-neutral);
   stroke-width: 0;
   fill: var(--color-neutral);
-  box-shadow: inset var(--shadow);
+  filter: url(#inset-shadow);
 `;
 
 export const Portrait = () => {

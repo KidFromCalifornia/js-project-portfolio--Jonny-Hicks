@@ -38,7 +38,7 @@ const LinkStyle = styled.a`
   }
 `;
 
-export const OpenLink = ({ url, buttonText, variant }) => {
+export const OpenLink = ({ url, buttonText }) => {
   return (
     <LinkStyle
       href={url}

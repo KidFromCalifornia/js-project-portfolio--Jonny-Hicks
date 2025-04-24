@@ -1,39 +1,51 @@
 import styled from "styled-components";
 
 const LinkStyle = styled.a`
-  background: var(--color-neutral);
-  color: var(--color-primary);
-  border: solid 2px var(--color-primary);
-  border-radius: 1rem;
+  background: ${(props) =>
+    props.variant === "Demo" ? "var(--color-accent)" : "var(--color-neutral)"};
+  color: ${(props) =>
+    props.variant === "Demo"
+      ? "var(--color-secondary)"
+      : "var(--color-primary)"};
+  border: solid 2px
+    ${(props) =>
+      props.variant === "Demo"
+        ? "var(--color-accent)"
+        : "var(--color-neutral)"};
+  border-radius: 0.8rem;
   box-shadow: var(--shadow);
   cursor: pointer;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: var(--a-font);
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
   text-align: center;
 
   &:hover {
-    color: var(--color-secondary);
-    border: solid 2px var(--color-accent);
+    background: ${(props) =>
+      props.variant === "Demo"
+        ? "var(--color-neutral)"
+        : "var(--color-accent)"};
+    color: ${(props) =>
+      props.variant === "Demo"
+        ? "var(--color-secondary)"
+        : "var(--color-secondary)"};
+    border: solid 2px
+      ${(props) =>
+        props.variant === "Demo"
+          ? "var(--color-accent)"
+          : "var(--color-accent)"};
   }
 `;
 
-/*.github {
-  background: var(--color-accent);
-  color: var(--font-color-primary);
-  border: solid 2px var(--color-accent);
-
-&:hover {
-  background: var(--color-netral);
-  color: var(--font-color-secondary);
-  border: solid 2px var(--color-primary);
-}
-*/
-
-export const OpenLink = ({ url, buttonText }) => {
+export const OpenLink = ({ url, buttonText, variant }) => {
   return (
-    <LinkStyle href={url} target="_blank" rel="noopener noreferrer">
+    <LinkStyle
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      variant={buttonText}
+    >
       {buttonText}
     </LinkStyle>
   );

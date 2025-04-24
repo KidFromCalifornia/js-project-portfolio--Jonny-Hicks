@@ -10,6 +10,7 @@ const AboutMeContainer = styled.section`
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
+  flex-wrap: wrap;
 `;
 const AboutText = styled.div`
   align-items: start;
@@ -28,13 +29,14 @@ const AboutTextP = styled.p`
 `;
 const AboutMeH2 = styled.h2`
   color: var(--color-accent);
+  font-size: 2.5rem;
 `;
 
 const AboutMeH1 = styled.h1`
   color: var(--font-color-light);
   font-size: 7rem;
   font-weight: 900;
- filter: url(#inset-shadow);
+  filter: url(#inset-shadow);
 `;
 
 const InsetShadowFilter = () => (

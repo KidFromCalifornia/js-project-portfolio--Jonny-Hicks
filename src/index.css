@@ -39,7 +39,6 @@ h1 {
   margin: 0.5rem;
 }
 
-h2,
 h3,
 h4 {
   color: var(--color-accent);
@@ -53,6 +52,9 @@ h2 {
   font-weight: 800;
   text-shadow: var(--shadow);
   margin: 0.5rem;
+  color: var(--font-color-light);
+  font-family: var(--font-header-2-3);
+  text-align: center;
 }
 
 h3 {

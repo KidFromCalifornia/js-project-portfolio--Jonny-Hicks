@@ -2,7 +2,7 @@ import { UpdateCard } from "../../../Components/Cards/UpdateCard";
 import {
   SectionContainer,
   CardContainer,
-} from "../../../Components/SectionStyling";
+} from "../../../Components/CardSectionStyling";
 import updates from "../../../data/Updates.json";
 
 // Ensure updates has a valid structure

@@ -2,7 +2,7 @@ import { Card } from "../../../Components/Cards/Card";
 import {
   SectionContainer,
   CardContainer,
-} from "../../../Components/SectionStyling";
+} from "../../../Components/CardSectionStyling";
 import projects from "../../../Data/projects.json";
 
 export const Projects = () => {

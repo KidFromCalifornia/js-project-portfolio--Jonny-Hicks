@@ -2,31 +2,34 @@ import styled from "styled-components";
 
 const FooterTextBox = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: stretch;
   width: 100%;
-
   box-sizing: border-box;
-  padding: 0 2rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
 `;
 const FooterText = styled.div`
   color: var(--color-primary);
-  font-size: 10rem;
   height: 100%;
   width: 100%;
   font-weight: 900;
-  font-family: var(--font-body);
+  font-family: var(--font-Header);
   filter: url(#inset-shadow);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  line-height: 1;
 `;
 
 export const FooterBackground = () => {
   return (
     <FooterTextBox>
-      <FooterText style={{ textAlign: "left", alignSelf: "self-start" }}>
+      <FooterText style={{ fontSize: "10rem", alignSelf: "left" }}>
         lets
       </FooterText>
-      <FooterText style={{ textAlign: "right", alignSelf: "self-end" }}>
+      <FooterText
+        style={{ fontSize: "20rem", alignSelf: "right", textAlign: "right" }}
+      >
         chat
       </FooterText>
     </FooterTextBox>

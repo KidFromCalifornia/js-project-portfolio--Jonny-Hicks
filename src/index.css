@@ -20,7 +20,9 @@
   --a-font: "Azeret Mono", sans-serif;
   --button-font: "IBM Plex Mono", sans-serif;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -29,6 +31,7 @@ body {
   position: relative;
   width: 100vw;
   height: auto;
+  overflow-x: hidden;
 }
 
 body::before {

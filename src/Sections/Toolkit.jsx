@@ -4,20 +4,22 @@ import {
   Creative,
   Workflow,
 } from "../Components/TechLists/Techlists";
-import { SectionContainer, CardContainer } from "../Components/SectionStyling";
+
+import { ListSections, ListContainer } from "../Components/ListsSectionStyles";
+
 export const Toolkit = () => {
   return (
-    <SectionContainer id="toolbox">
+    <ListSections id="toolbox">
       <div className="h2-title">
         <h2>Toolkit</h2>
       </div>
-      <CardContainer className="toolbox-list">
+      <ListContainer>
         <Frontend />
         <Backend />
         <Workflow />
         <Backend />
         <Creative />
-      </CardContainer>
-    </SectionContainer>
+      </ListContainer>
+    </ListSections>
   );
 };

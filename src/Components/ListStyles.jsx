@@ -12,6 +12,7 @@ export const ListGroup = styled.div`
   justify-content: start;
   align-items: start;
   text-align: left;
+  margin-top: 2rem;
 `;
 export const ListItem = styled.li`
   list-style: none;

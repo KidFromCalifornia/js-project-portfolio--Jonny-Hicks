@@ -7,14 +7,16 @@ const PhotoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: scale(1.2);
+  transform: scale(1.6);
+  width: fit-content;
+  height: fit-content;
 `;
 
 const Photo = styled.img`
   width: 350px;
   height: auto;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   transform: translate(4px, -20px);
 `;
 
@@ -22,7 +24,7 @@ const CircleBehind = styled.svg`
   position: relative;
   width: 390px;
   height: 390px;
-  z-index: 1;
+  z-index: 0;
 `;
 
 const Circle = styled.circle`

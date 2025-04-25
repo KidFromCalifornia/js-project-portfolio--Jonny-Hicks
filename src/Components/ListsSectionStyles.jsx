@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const ListSections = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 0 5rem;
+  padding: 0 4rem;
   justify-content: start;
   box-sizing: border-box;
   align-content: start;
-  width: 75%;
+  width: 85%;
+  margin-bottom: 4rem;
 `;
 export const ListContainer = styled.div`
   display: flex;
@@ -16,8 +17,7 @@ export const ListContainer = styled.div`
   text-align: left;
   align-items: start;
   padding: 1rem;
-
-  margin: 4rem 0;
+  margin-top: 4rem;
   box-sizing: border-box;
   flex-wrap: wrap;
   width: 100%;

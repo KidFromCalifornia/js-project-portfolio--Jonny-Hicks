@@ -9,8 +9,11 @@ const FooterContent = styled.div`
   height: 200;
   padding: 0 rem;
   box-sizing: border-box;
-  width: fit-content;
+  width: 100%;
+  display: flex;
+  bottom: 0;
 `;
+
 const Background = styled.div`
   z-index: 1;
 `;
@@ -23,7 +26,7 @@ const FooterForeground = styled.div`
 
 export const Footer = () => {
   return (
-    <FooterContent>
+    <FooterContent id="contact">
       <FooterForeground>
         <Contacts />
       </FooterForeground>

@@ -7,7 +7,8 @@ export const SectionContainer = styled.section`
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
 `;
 export const CardContainer = styled.div`
   display: flex;
@@ -15,8 +16,6 @@ export const CardContainer = styled.div`
   justify-content: center;
   align-items: start;
   text-align: center;
-  padding: 0 2rem;
-  margin: 4rem 0;
   max-width: 100%;
   box-sizing: border-box;
   flex-wrap: wrap;

@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const LinkStyle = styled.a`
   background: ${(props) =>
-    props.variant === "Demo" ? "var(--color-accent)" : "var(--color-neutral)"};
+    props.$variant === "Demo" ? "var(--color-accent)" : "var(--color-neutral)"};
   color: ${(props) =>
-    props.variant === "Demo"
+    props.$variant === "Demo"
       ? "var(--color-secondary)"
       : "var(--color-primary)"};
   border: solid 2px
     ${(props) =>
-      props.variant === "Demo"
+      props.$variant === "Demo"
         ? "var(--color-accent)"
         : "var(--color-neutral)"};
   border-radius: 0.8rem;
@@ -23,16 +23,16 @@ const LinkStyle = styled.a`
 
   &:hover {
     background: ${(props) =>
-      props.variant === "Demo"
+      props.$variant === "Demo"
         ? "var(--color-neutral)"
         : "var(--color-accent)"};
     color: ${(props) =>
-      props.variant === "Demo"
+      props.$variant === "Demo"
         ? "var(--color-secondary)"
         : "var(--color-secondary)"};
     border: solid 2px
       ${(props) =>
-        props.variant === "Demo"
+        props.$variant === "Demo"
           ? "var(--color-accent)"
           : "var(--color-accent)"};
   }
@@ -44,7 +44,7 @@ export const OpenLink = ({ url, buttonText }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      variant={buttonText}
+      $variant={buttonText}
     >
       {buttonText}
     </LinkStyle>

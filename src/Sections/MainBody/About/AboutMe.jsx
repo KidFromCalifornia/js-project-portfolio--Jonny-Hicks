@@ -1,3 +1,4 @@
+import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { Portrait } from "../../../Components/Portrait/Portrait";
 import { ProfileLinks } from "../../../Components/ProfileLinks/ProfileLinks";
 import { SvgShadow } from "../../../Components/SvgShadow";
@@ -7,25 +8,33 @@ import styled from "styled-components";
 const AboutMeContainer = styled.section`
   display: flex;
   flex-direction: row;
-  padding: 0 5rem;
-  justify-content: center;
+  padding: 0 4rem;
+  justify-content: space-evenly;
   box-sizing: border-box;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  z-index: 0;
+  margin: 4rem 0rem;
 `;
 const AboutText = styled.div`
+  display: flex;
+  width: 650px;
+  height: 742px;
+  flex-direction: column;
+  justify-content: center;
   align-items: start;
-  justify-content: start;
+  align-content: space-between;
+
   text-align: left;
-  padding: 1rem;
-  margin: 0.5rem;
-  max-width: 50%;
-  box-sizing: border-box;
 `;
 const AboutTextP = styled.p`
   overflow-wrap: break-word;
-  color: var(--font-color-light);
-  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "IBM Plex Mono";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
   padding: 0.5rem;
 `;
 const AboutMeH2 = styled.h2`
@@ -34,8 +43,7 @@ const AboutMeH2 = styled.h2`
 `;
 
 const AboutMeH1 = styled.h1`
-  color: var(--font-color-light);
-  font-size: 7rem;
+  font-size: 6.5rem;
   font-weight: 900;
   filter: url(#inset-shadow);
 `;
@@ -47,7 +55,7 @@ export const AboutMe = () => {
         <AboutMeH1 style={{ filter: "url(#inset-shadow)" }}>
           Jonny <br /> Hicks
         </AboutMeH1>
-        <AboutMeH2>I Am a Web Developer</AboutMeH2>
+        <AboutMeH2>FRONTEND DEVELOPER</AboutMeH2>
         <AboutTextP>
           I am a creative problem solver who has transitioned into web
           development, leveraging my background in customer service,

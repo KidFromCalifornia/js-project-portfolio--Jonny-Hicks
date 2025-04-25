@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
   margin: 0 1rem;
+  position: sticky;
 `;
 
 const NavLinks = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: sticky;
+
   margin: 1rem 0;
 `;
 

@@ -20,8 +20,19 @@
   --a-font: "Azeret Mono", sans-serif;
   --button-font: "IBM Plex Mono", sans-serif;
 }
-* {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  flex-shrink: 1;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
 }
 body {
   display: flex;
@@ -29,8 +40,6 @@ body {
   align-items: center;
   background: var(--color-primary);
   position: relative;
-  width: 100vw;
-  height: auto;
   overflow-x: hidden;
 }
 
@@ -41,6 +50,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0;
+  overflow-x: hidden;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100" height="100" filter="url(%23grain)" /></svg>')
     repeat;
   opacity: 0.3; /* Adjust grain intensity */
@@ -67,12 +78,11 @@ h4 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
   text-shadow: var(--shadow);
   margin: 0.5rem;
   color: var(--font-color-light);
   font-family: var(--font-header-2-3);
-  text-align: center;
 }
 
 h3 {
@@ -101,26 +111,12 @@ a {
   text-decoration: none;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-}
-
-footer {
-  justify-content: start;
 }
 
 .project-icons > path,

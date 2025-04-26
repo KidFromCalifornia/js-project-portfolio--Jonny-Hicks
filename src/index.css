@@ -31,9 +31,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-
-  overflow-x: hidden;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -65,7 +64,7 @@ h1 {
   font-size: 6.5rem;
   font-weight: 700;
   text-shadow: var(--shadow);
-  margin: 0.5rem;
+  margin: 0rem;
 }
 
 h3,
@@ -80,7 +79,7 @@ h2 {
   font-size: 3rem;
   font-weight: 700;
   text-shadow: var(--shadow);
-  margin: 0.5rem;
+  margin: 0rem;
   color: var(--font-color-light);
   font-family: var(--font-header-2-3);
 }
@@ -98,7 +97,7 @@ p {
   font-family: var(--font-body);
   font-size: 1rem;
   text-shadow: var(--shadow);
-  margin: 0.5rem;
+  margin: 0rem;
 }
 ul {
   margin: 0;

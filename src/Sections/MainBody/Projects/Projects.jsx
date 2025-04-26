@@ -10,7 +10,7 @@ export const Projects = () => {
     <SectionContainer id="projects">
       <h2>Projects</h2>
 
-      <CardContainer className="projects">
+      <CardContainer>
         {projects.projects.map((project) => (
           <div key={project.index} className="project-card">
             <Card

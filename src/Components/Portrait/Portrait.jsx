@@ -7,11 +7,17 @@ const PhotoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: scale(1.6);
+  transform: scale(0.7);
   width: fit-content;
   height: fit-content;
-`;
 
+  @media (min-width: 720px) {
+    transform: scale(1);
+  }
+  @media (min-width: 1100px) {
+    transform: scale(1.2);
+  }
+`;
 const Photo = styled.img`
   width: 350px;
   height: auto;

@@ -6,8 +6,7 @@ const FooterContent = styled.div`
   position: relative;
   background-color: var(--shadow-color);
   z-index: 0;
-  height: 200;
-  padding: 0 rem;
+  height: auto;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -20,6 +19,7 @@ const Background = styled.div`
 const FooterForeground = styled.div`
   z-index: 2;
   position: absolute;
+
   bottom: 7rem;
   right: 20rem;
 `;

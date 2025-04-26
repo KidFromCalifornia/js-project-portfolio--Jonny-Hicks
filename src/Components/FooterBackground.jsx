@@ -19,6 +19,17 @@ const FooterText = styled.div`
   text-transform: uppercase;
   box-sizing: border-box;
   line-height: 1;
+
+  transform: scale(25%);
+  line-height: 3rem;
+
+  @media (max-width: 720px) {
+    display: none;
+  }
+  @media (min-width: 1010px) {
+    transform: none;
+    line-height: normal;
+  }
 `;
 
 export const FooterBackground = () => {

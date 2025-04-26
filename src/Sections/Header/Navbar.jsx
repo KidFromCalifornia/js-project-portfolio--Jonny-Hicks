@@ -1,15 +1,24 @@
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
+  display: none;
   margin: 0 1rem;
-  position: sticky;
+  position: fixed;
+  align-items: center;
+  top: 0;
+
+  @media (max-width: 720px) {
+    display: inline-block;
+  }
+  @media (min-width: 1010px) {
+    display: inline-block;
+  }
 `;
 
 const NavLinks = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   margin: 1rem 0;
 `;
 
@@ -38,8 +47,8 @@ const NavBarLinks = styled.a`
 
 export const Navbar = () => {
   return (
-    <NavbarContainer className="navbar">
-      <NavLinks className="nav-links">
+    <NavbarContainer>
+      <NavLinks>
         <NavLinksList>
           <NavBarLinks href="#aboutme">About me</NavBarLinks>
         </NavLinksList>

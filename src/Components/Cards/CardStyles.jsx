@@ -19,7 +19,7 @@ export const CardContainer = styled.div`
   text-align: center;
   box-sizing: border-box;
   gap: 1rem;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-primary);
   border-radius: 1rem;
   padding: 0.05rem;
 `;

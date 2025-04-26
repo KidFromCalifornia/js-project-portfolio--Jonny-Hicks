@@ -7,18 +7,20 @@ export const ListSections = styled.section`
   justify-content: start;
   box-sizing: border-box;
   align-content: start;
-  width: 85%;
+  width: 80%;
   margin-bottom: 4rem;
 `;
+
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
   align-items: start;
   padding: 1rem;
   margin-top: 4rem;
   box-sizing: border-box;
   flex-wrap: wrap;
+  gap: 2rem;
   width: 100%;
 `;

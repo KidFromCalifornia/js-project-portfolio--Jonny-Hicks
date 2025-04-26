@@ -43,7 +43,7 @@ export const Workflow = () => {
         <ListGroup>
           <ListItem>GitHub</ListItem>
           <ListItem>Pair Programming</ListItem>
-          <ListItem>Mob Programmin</ListItem>
+          <ListItem>Mob Programming</ListItem>
         </ListGroup>
       </Column>
     </>
@@ -59,7 +59,7 @@ export const Creative = () => {
         </h3>
         <ListGroup>
           <ListItem>Lightroom</ListItem>
-          <ListItem>Illistrator</ListItem>
+          <ListItem>Illustrator</ListItem>
           <ListItem>Indesign</ListItem>
           <ListItem>Figma</ListItem>
         </ListGroup>

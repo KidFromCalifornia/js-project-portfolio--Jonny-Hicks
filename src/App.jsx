@@ -3,7 +3,7 @@ import "./index.css";
 import { AboutMe } from "./Sections/MainBody/About/AboutMe.jsx";
 import { Header } from "./Sections/Header/Head.jsx";
 import { Projects } from "./Sections/MainBody/Projects/Projects.jsx";
-import { Toolkit } from "./Sections/Toolkit.jsx";
+import { ToolkitSection } from "./Sections/Toolkit.jsx";
 
 import { Skills } from "./Sections/Skills.jsx";
 import { Footer } from "./Sections/Footer/FooterContent.jsx";
@@ -20,7 +20,7 @@ export const App = () => {
         <AboutMe />
         <Skills />
         <Projects />
-        <Toolkit />
+        <ToolkitSection />
         <Updates />
       </main>
       <footer>

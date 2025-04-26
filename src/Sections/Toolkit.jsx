@@ -7,7 +7,7 @@ import {
 
 import { ListSections, ListContainer } from "../Components/ListsSectionStyles";
 
-export const Toolkit = () => {
+export const ToolkitSection = () => {
   return (
     <ListSections id="toolbox">
       <div className="h2-title">

@@ -61,9 +61,6 @@ body::before {
 h1 {
   color: var(--font-color-light);
   font-family: var(--font-Header);
-  font-size: 6.5rem;
-  font-weight: 700;
-  text-shadow: var(--shadow);
   margin: 0rem;
 }
 
@@ -136,10 +133,6 @@ main {
 @media (min-width: 16rem) {
   body {
     font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 6rem;
   }
 
   h2 {

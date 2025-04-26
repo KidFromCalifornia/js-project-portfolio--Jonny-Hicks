@@ -1,48 +1,62 @@
 import styled from "styled-components";
 
 const FooterTextBox = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: none;
+  flex-direction: column;
   justify-content: stretch;
   width: 100%;
   box-sizing: border-box;
   padding: 0.5rem;
-  flex-wrap: wrap;
+  align-self: start;
+  text-align: left;
+  line-height: 1rem;
+
+  @media (min-width: 1010px) {
+    display: flex;
+  }
 `;
+
 const FooterText = styled.div`
+  display: block;
   color: var(--color-primary);
-  height: 100%;
-  width: 100%;
   font-weight: 900;
   font-family: var(--font-Header);
   filter: url(#inset-shadow);
   text-transform: uppercase;
   box-sizing: border-box;
-  line-height: 1;
+  line-height: normal;
 
-  transform: scale(25%);
-  line-height: 3rem;
+  ${({ variant }) => {
+    const styles = {
+      start: `
+          font-size: 10rem;
+          align-self: start;
+          text-align: left;
+        `,
+      end: `
+          font-size: 20rem;
+          align-self: end;
+          text-align: right;
+        `,
+    };
+    return styles[variant];
+  }}
 
   @media (max-width: 720px) {
     display: none;
   }
+
   @media (min-width: 1010px) {
     transform: none;
-    line-height: normal;
+    line-height: 12rem;
   }
 `;
 
 export const FooterBackground = () => {
   return (
     <FooterTextBox>
-      <FooterText style={{ fontSize: "10rem", alignSelf: "left" }}>
-        lets
-      </FooterText>
-      <FooterText
-        style={{ fontSize: "20rem", alignSelf: "right", textAlign: "right" }}
-      >
-        chat
-      </FooterText>
+      <FooterText $variant="start">lets</FooterText>
+      <FooterText $variant="end">chat</FooterText>
     </FooterTextBox>
   );
 };

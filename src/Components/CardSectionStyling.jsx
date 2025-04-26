@@ -12,12 +12,16 @@ export const SectionContainer = styled.section`
 `;
 export const CardContainer = styled.div`
   display: flex;
-  flex-direction: c;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
+
   text-align: center;
   max-width: 100%;
-  box-sizing: border-box;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-top: 4rem;
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
 `;

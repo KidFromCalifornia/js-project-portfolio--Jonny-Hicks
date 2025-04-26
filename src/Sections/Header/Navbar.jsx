@@ -1,25 +1,20 @@
 import styled from "styled-components";
 
-const NavbarContainer = styled.nav`
+const NavLinks = styled.ul`
   display: none;
-  margin: 0 1rem;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  padding: 1rem 0;
   position: fixed;
   align-items: center;
   top: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
 
-  @media (max-width: 720px) {
-    display: inline-block;
+  @media (min-width: 720px) {
+    display: flex;
   }
-  @media (min-width: 1010px) {
-    display: inline-block;
-  }
-`;
-
-const NavLinks = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem 0;
 `;
 
 const NavLinksList = styled.li`
@@ -31,7 +26,7 @@ const NavBarLinks = styled.a`
   text-decoration: none;
   font-family: var(--a-font);
   color: var(--font-color-light);
-  font-size: 1 rem;
+  font-size: 1rem;
   font-weight: 400;
   text-shadow: var(--shadow);
   margin: 0;
@@ -47,27 +42,25 @@ const NavBarLinks = styled.a`
 
 export const Navbar = () => {
   return (
-    <NavbarContainer>
-      <NavLinks>
-        <NavLinksList>
-          <NavBarLinks href="#aboutme">About me</NavBarLinks>
-        </NavLinksList>
-        <NavLinksList>
-          <NavBarLinks href="#skills">Skills</NavBarLinks>
-        </NavLinksList>
-        <NavLinksList>
-          <NavBarLinks href="#projects">Projects</NavBarLinks>
-        </NavLinksList>
-        <NavLinksList>
-          <NavBarLinks href="#toolbox">Toolbox</NavBarLinks>
-        </NavLinksList>
-        <NavLinksList>
-          <NavBarLinks href="#updates">Updates</NavBarLinks>
-        </NavLinksList>
-        <NavLinksList>
-          <NavBarLinks href="#contact">Contact</NavBarLinks>
-        </NavLinksList>
-      </NavLinks>
-    </NavbarContainer>
+    <NavLinks>
+      <NavLinksList>
+        <NavBarLinks href="#aboutme">About me</NavBarLinks>
+      </NavLinksList>
+      <NavLinksList>
+        <NavBarLinks href="#skills">Skills</NavBarLinks>
+      </NavLinksList>
+      <NavLinksList>
+        <NavBarLinks href="#projects">Projects</NavBarLinks>
+      </NavLinksList>
+      <NavLinksList>
+        <NavBarLinks href="#toolbox">Toolbox</NavBarLinks>
+      </NavLinksList>
+      <NavLinksList>
+        <NavBarLinks href="#updates">Updates</NavBarLinks>
+      </NavLinksList>
+      <NavLinksList>
+        <NavBarLinks href="#contact">Contact</NavBarLinks>
+      </NavLinksList>
+    </NavLinks>
   );
 };

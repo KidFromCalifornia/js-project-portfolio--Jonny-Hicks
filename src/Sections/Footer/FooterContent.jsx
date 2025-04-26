@@ -1,58 +1,48 @@
-import { FooterBackground } from "../../Components/FooterBackground";
-import { Contacts } from "../../Components/ContactDetails";
 import styled from "styled-components";
+import { Contacts } from "../../Components/ContactDetails";
 
-const FooterContent = styled.div`
+const FooterWrapper = styled.footer`
   position: relative;
   background-color: var(--shadow-color);
-  z-index: 1;
-  height: 4rem;
-  padding: 0 2rem;
-  width: 100dvw;
-  display: block;
-  bottom: 0;
-`;
+  color: var(--color-primary);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-const Background = styled.div`
-  display: block;
-  z-index: 1;
-  transform: scale(25%);
-  line-height: 3rem;
-
-  @media (max-width: 720px) {
-    transform: scale(10%);
-    line-height: 1rem;
-  }
-
-  @media (min-width: 1010px) {
-    transform: none;
-    line-height: normal;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
   }
 `;
 
-const FooterForeground = styled.div`
-  z-index: 2;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+const FooterBackgroundText = styled.div`
+  font-family: var(--font-Header);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--color-primary);
+  opacity: 0.1;
+  font-size: 5rem;
 
-  @media (max-width: 720px) {
+  @media (min-width: 768px) {
+    font-size: 8rem;
   }
+
   @media (min-width: 1010px) {
-    bottom: 7rem;
-    right: 20rem;
+    font-size: 12rem;
   }
 `;
 
 export const Footer = () => {
   return (
-    <FooterContent id="contact">
-      <FooterForeground>
-        <Contacts />
-      </FooterForeground>
-      <Background>
-        <FooterBackground />
-      </Background>
-    </FooterContent>
+    <FooterWrapper id="contact">
+      <FooterBackgroundText>Let's Chat</FooterBackgroundText>
+      <Contacts />
+    </FooterWrapper>
   );
 };

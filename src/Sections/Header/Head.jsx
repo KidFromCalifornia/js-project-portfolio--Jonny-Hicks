@@ -6,9 +6,10 @@ const HeaderContainer = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  width: 100dvw;
-  height: 2rem;
+  align-content: center;
+
+  width: 100%;
+  height: fit-content;
   background-color: var(--primary-color);
 `;
 

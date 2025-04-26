@@ -5,14 +5,15 @@ const NavLinks = styled.ul`
   flex-direction: row;
   justify-content: center;
   position: fixed;
-  padding: 1rem 0;
-  position: fixed;
   align-items: center;
+  align-content: center;
   top: 0;
+  padding: 1rem;
   z-index: 100;
-  background-color: var(--primary-color);
+  background-color: var(--shadow-color);
+  width: 100%;
 
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     display: flex;
   }
 `;

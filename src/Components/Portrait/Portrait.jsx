@@ -8,13 +8,14 @@ const PhotoContainer = styled.div`
   justify-content: center;
   align-items: center;
   transform: scale(0.7);
-  width: fit-content;
-  height: fit-content;
+  width: 100dvw;
+  height: auto;
 
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     transform: scale(1);
+    width: 35%;
   }
-  @media (min-width: 1100px) {
+  @media (min-width: 1010px) {
     transform: scale(1.2);
   }
 `;

@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #0e7147;
-  --color-secondary: #413341;
+  --color-secondary: rgb(25, 35, 27);
   --color-accent: #ffbc3e;
   --color-neutral: #e4e4e4;
 
@@ -10,8 +10,8 @@
   --font-color-dark: #0e7147;
   --font-color-light: #e4e4e4;
   /* shadow */
-  --shadow: 0px 2px 3px rgba(65, 51, 65, 0.8);
-  --shadow-color: rgba(65, 51, 65, 0.8);
+  --shadow: 0px 2px 3px rgba(25, 35, 27, 0.8);
+  --shadow-color: rgba(25, 35, 27, 0.6);
 
   /* FONTS */
   --font-Header: "Rubik Mono One", sans-serif;
@@ -31,6 +31,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,9 +52,9 @@ body::before {
   height: 100%;
   padding: 0;
   overflow-x: hidden;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100" height="100" filter="url(%23grain)" /></svg>')
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.5%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%20/%3E%3C/filter%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20filter%3D%22url(%23grain)%22%20/%3E%3C/svg%3E")
     repeat;
-  opacity: 0.3; /* Adjust grain intensity */
+  opacity: 0.4; /* Adjust grain intensity */
   pointer-events: none;
   mix-blend-mode: multiply;
 }
@@ -73,7 +74,7 @@ h4 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--shadow);
   margin: 0rem;
@@ -82,11 +83,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 p {
@@ -130,9 +131,31 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 16rem) {
+@media (min-width: 768px) {
   body {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+  H4 {
+    font-size: 1.5rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -140,10 +163,10 @@ main {
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   H4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   a:hover {

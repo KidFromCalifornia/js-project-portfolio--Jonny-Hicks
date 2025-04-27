@@ -1,4 +1,4 @@
-import { Column, ListGroup, ListItem } from "../ListStyles";
+import { Column, ListGroup, ListItem } from "../Styles/ListStyles";
 
 export const Backend = () => {
   return (

@@ -1,4 +1,4 @@
-import { Column, ListGroup, ListItem } from "../ListStyles";
+import { Column, ListGroup, ListItem } from "../Styles/ListStyles";
 
 export const Code = () => {
   return (
@@ -22,9 +22,9 @@ export const Toolkit = () => {
   return (
     <>
       <Column>
-        <h3>Toolbox</h3>
+        <h3>Toolkit</h3>
         <ListGroup>
-          <ListItem>VS Code</ListItem>
+          <ListItem>VSCode</ListItem>
           <ListItem>GitHub</ListItem>
           <ListItem>Figma</ListItem>
           <ListItem>Slack</ListItem>

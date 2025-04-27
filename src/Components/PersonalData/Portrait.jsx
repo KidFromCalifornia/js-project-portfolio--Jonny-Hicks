@@ -1,6 +1,6 @@
 import photo from "../../assets/img/PP-JHicks.png";
 import styled from "styled-components";
-import { SvgShadow } from "../SvgShadow";
+import { SvgShadow } from "../Styles/SvgShadow";
 
 const PhotoContainer = styled.div`
   display: flex;
@@ -49,7 +49,6 @@ export const Portrait = () => {
         <SvgShadow />
         <Circle cx="195" cy="195" r="195" />
       </CircleBehind>
-      <Photo src={photo} alt="Portrait of Jonny Hicks" />
     </PhotoContainer>
   );
 };

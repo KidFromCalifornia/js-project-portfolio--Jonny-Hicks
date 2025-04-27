@@ -3,9 +3,12 @@ import {
   Backend,
   Creative,
   Workflow,
-} from "../Components/TechLists/Techlists";
+} from "../../../Components/TechLists/Techlists";
 
-import { ListSections, ListContainer } from "../Components/ListsSectionStyles";
+import {
+  ListSections,
+  ListContainer,
+} from "../../../Components/Styles/ListsSectionStyles";
 
 export const ToolkitSection = () => {
   return (
@@ -16,7 +19,6 @@ export const ToolkitSection = () => {
         <Frontend />
         <Backend />
         <Workflow />
-        <Backend />
         <Creative />
       </ListContainer>
     </ListSections>

@@ -5,7 +5,7 @@ export const ListSections = styled.section`
   flex-direction: column;
   padding: 0 0.5rem;
   justify-content: center;
-  align-content: center;
+
   max-width: 100%;
   margin-bottom: 1rem;
 
@@ -25,13 +25,12 @@ export const ListSections = styled.section`
 export const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  align-content: start;
+  justify-content: space-evenly;
   padding: 1rem;
   margin-top: 4rem;
   box-sizing: border-box;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: rem;
   width: 100%;
 `;

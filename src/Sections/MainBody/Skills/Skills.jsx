@@ -1,4 +1,9 @@
-import { Code, Toolkit, Upcoming, More } from "../Components/Skills/Skills";
+import {
+  Code,
+  Toolkit,
+  Upcoming,
+  More,
+} from "../../../Components/Skills/Skills";
 
 import { ListSections, ListContainer } from "../Components/ListsSectionStyles";
 

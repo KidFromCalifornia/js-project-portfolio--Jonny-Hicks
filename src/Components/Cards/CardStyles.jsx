@@ -25,11 +25,13 @@ export const CardContainer = styled.div`
 `;
 
 export const BaseIcon = styled(FontAwesomeIcon)`
-  color: var(--primary-accent);
   margin-bottom: 0.5rem;
   font-size: 10rem;
   filter: drop-shadow(var(--shadow));
-  fill: var(--primary-accent);
+
+  path {
+    fill: var(--color-accent);
+  }
 `;
 
 export const BaseButtonList = styled.ul`

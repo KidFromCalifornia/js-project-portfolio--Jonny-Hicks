@@ -15,7 +15,6 @@ export const ListGroup = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin-top: 2rem;
 
   @media (min-width: 768px) {

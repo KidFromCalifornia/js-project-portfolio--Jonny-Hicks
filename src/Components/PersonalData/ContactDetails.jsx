@@ -1,4 +1,4 @@
-import { ProfileLinks } from "./ProfileLinks/ProfileLinks";
+import { ProfileLinks } from "./ProfileLinks";
 import styled from "styled-components";
 
 const ContactContainer = styled.div`

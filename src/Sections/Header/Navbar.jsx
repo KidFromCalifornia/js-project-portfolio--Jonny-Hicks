@@ -45,7 +45,7 @@ export const Navbar = () => {
   return (
     <NavLinks>
       <NavLinksList>
-        <NavBarLinks href="#aboutme">About me</NavBarLinks>
+        <NavBarLinks href="#aboutMe">About me</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
         <NavBarLinks href="#skills">Skills</NavBarLinks>

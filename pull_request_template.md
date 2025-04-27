@@ -1,1 +1,3 @@
-Please include a link to your Figma design and a Netlify link.
+figma: (https://www.figma.com/design/TRJIJC4vbVQ3SYhvTibPCq/Jonny-HIcks-Portfolio-Design?node-id=1-350&m=dev)
+
+https://jonnyhicks.netlify.app

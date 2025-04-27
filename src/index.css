@@ -120,16 +120,6 @@ main {
 .footer-contacts > ul > li svg path {
   fill: var(--color-accent);
 }
-.profile-links > li > a > svg {
-  font-size: 2rem;
-  color: var(--color-neutral);
-}
-
-.profile-links > li > a > svg:hover {
-  color: var(--color-accent);
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
 
 @media (min-width: 768px) {
   body {

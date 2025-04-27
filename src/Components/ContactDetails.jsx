@@ -33,6 +33,7 @@ const ContactDetails = styled.ul`
   li {
     margin-bottom: 0.5rem;
     color: var(--color-accent);
+    font-family: var(--font-body);
   }
 
   @media (min-width: 768px) {

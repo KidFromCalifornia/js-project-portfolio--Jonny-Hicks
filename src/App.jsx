@@ -8,9 +8,9 @@ import { ToolkitSection } from "./Sections/Toolkit.jsx";
 import { Skills } from "./Sections/Skills.jsx";
 import { Footer } from "./Sections/Footer/FooterContent.jsx";
 import { Updates } from "./Sections/MainBody/Updates/Updates.jsx";
+import ScrollAnimation from "./Components/animation.jsx";
 
 export const App = () => {
-  console.log("App.jsx");
   return (
     <>
       <header>
@@ -29,3 +29,5 @@ export const App = () => {
     </>
   );
 };
+
+new ScrollAnimation(".animate");

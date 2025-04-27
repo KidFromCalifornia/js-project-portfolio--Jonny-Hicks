@@ -112,7 +112,7 @@ const AboutMeH1 = styled.h1`
 
 export const AboutMe = () => {
   return (
-    <AboutMeContainer id="about-me">
+    <AboutMeContainer id="aboutMe">
       <AboutText>
         <AboutMeH1 style={{ filter: "url(#inset-shadow)" }}>
           Jonny Hicks
@@ -128,7 +128,7 @@ export const AboutMe = () => {
           Camp, specializing in accessible, responsive websites using React,
           JavaScript, and TypeScript.
         </AboutTextP>
-        <ProfileLinks />
+        <ProfileLinks $variant="white" />
       </AboutText>
       <Portrait />
     </AboutMeContainer>

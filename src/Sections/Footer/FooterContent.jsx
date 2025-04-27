@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Contacts } from "../../Components/ContactDetails";
 
-const FooterWrapper = styled.footer`
+const FooterContainer = styled.footer`
   position: relative;
   background-color: var(--shadow-color);
   color: var(--color-primary);
@@ -40,9 +40,9 @@ const FooterBackgroundText = styled.div`
 
 export const Footer = () => {
   return (
-    <FooterWrapper id="contact">
+    <FooterContainer id="contact">
       <FooterBackgroundText>Let's Chat</FooterBackgroundText>
       <Contacts />
-    </FooterWrapper>
+    </FooterContainer>
   );
 };

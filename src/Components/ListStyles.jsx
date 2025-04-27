@@ -11,7 +11,7 @@ export const Column = styled.div`
     justify-content: start;
   }
 `;
-export const ListGroup = styled.div`
+export const ListGroup = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;

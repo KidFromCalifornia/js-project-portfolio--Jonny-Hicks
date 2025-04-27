@@ -45,6 +45,7 @@ export const OpenLink = ({ url, buttonText }) => {
       target="_blank"
       rel="noopener noreferrer"
       $variant={buttonText}
+      aria-label={`Open ${buttonText} link`}
     >
       {buttonText}
     </LinkStyle>

@@ -44,9 +44,9 @@ export const Upcoming = () => {
           <ListItem>Node.js</ListItem>
           <ListItem>MongoDB</ListItem>
           <ListItem>Postman</ListItem>
-          <div style={{ marginTop: "1rem" }}>
+          <ListItem style={{ marginTop: "1rem" }}>
             <h3>Goals</h3>
-          </div>
+          </ListItem>
           <ListItem>axe DevTools</ListItem>
           <ListItem>React Native</ListItem>
           <ListItem>Flutter</ListItem>

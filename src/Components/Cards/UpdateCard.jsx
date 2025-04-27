@@ -1,10 +1,9 @@
 import {
   CardContainer,
-  BaseIcon,
   BaseButtonList,
   BaseButtonItem,
-} from "./CardStyles.jsx";
-import { OpenLink } from "../Buttons/OpenLink";
+} from "../Styles/CardStyles.jsx";
+import { OpenLink } from "../Buttons/OpenLink.jsx";
 
 export const UpdateCard = ({ name, description, index, post }) => {
   return (

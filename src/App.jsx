@@ -1,11 +1,11 @@
 import "./index.css";
-import { AboutMe } from "./Sections/MainBody/About/AboutMe.jsx";
-import { Header } from "./Sections/Header/Head.jsx";
-import { Projects } from "./Sections/MainBody/Projects/Projects.jsx";
-import { ToolkitSection } from "./Sections/MainBody/Tools/Toolkit.jsx";
-import { Skills } from "./Sections/MainBody/Skills/Skills.jsx";
-import { Footer } from "./Sections/Footer/FooterContent.jsx";
-import { Updates } from "./Sections/MainBody/Updates/Updates.jsx";
+import { Header } from "./Sections/Header/Head";
+import { AboutMe } from "./Sections/MainBody/About/AboutMe";
+import { Skills } from "./Sections/MainBody/Skills/Skills";
+import { Projects } from "./Sections/MainBody/Projects/Projects";
+import { ToolkitSection } from "./Sections/MainBody/Tools/Toolkit";
+import { Updates } from "./Sections/MainBody/Updates/Updates";
+import { Footer } from "./Sections/Footer/FooterContent";
 
 export const App = () => {
   return (

@@ -3,7 +3,7 @@ import {
   BaseIcon,
   BaseButtonList,
   BaseButtonItem,
-} from "./CardStyles";
+} from "../Styles/CardStyles";
 import { OpenLink } from "../Buttons/OpenLink";
 
 export const Card = ({ icon, name, description, netlify, github }) => {

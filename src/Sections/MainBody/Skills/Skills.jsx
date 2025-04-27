@@ -3,12 +3,12 @@ import {
   Toolkit,
   Upcoming,
   More,
-} from "../../../../Components/Skills/SkillsList.jsx";
+} from "../../../Components/Skills/SkillsList.jsx";
 
 import {
   ListSections,
   ListContainer,
-} from "../../../../Components/Styles/ListsSectionStyles";
+} from "../../../Components/Styles/ListsSectionStyles";
 
 export const Skills = () => {
   return (

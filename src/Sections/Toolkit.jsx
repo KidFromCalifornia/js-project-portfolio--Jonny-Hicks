@@ -10,9 +10,8 @@ import { ListSections, ListContainer } from "../Components/ListsSectionStyles";
 export const ToolkitSection = () => {
   return (
     <ListSections id="toolbox">
-      <div className="h2-title">
-        <h2>Toolkit</h2>
-      </div>
+      <h2>Toolkit</h2>
+
       <ListContainer>
         <Frontend />
         <Backend />

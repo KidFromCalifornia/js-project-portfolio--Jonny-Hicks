@@ -26,8 +26,8 @@ export const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: left;
-  align-items: start;
+  text-align: center;
+  align-items: center;
   padding: 1rem;
   margin-top: 4rem;
   box-sizing: border-box;

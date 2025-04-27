@@ -14,6 +14,7 @@ const AboutMeContainer = styled.section`
   max-width: 100%;
   z-index: 0;
   gap: 1rem;
+  width: 100dvw;
 
   @media (min-width: 768px) {
     flex-direction: row;

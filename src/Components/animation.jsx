@@ -1,33 +1,32 @@
 class ScrollAnimation {
-  constructor(selector, options = {}) {
-    this.elements = document.querySelectorAll(selector);
-    this.options = Object.assign({ threshold: 0.1 }, options);
+  constructor(selector, options = { threshold: 0.1 }) {
+    this.sections = document.querySelectorAll(selector);
+    console.log("Sections found:", this.sections); // Debugging
     this.observer = new IntersectionObserver(
       this.handleIntersect.bind(this),
-      this.options
+      options
     );
     this.init();
   }
 
   init() {
-    this.elements.forEach((el) => {
-      el.style.opacity = 0;
-      el.style.transform = "translateY(50px)";
-      el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-      this.observer.observe(el);
+    this.sections.forEach((section) => {
+      console.log("Initializing section:", section); // Debugging
+      section.classList.add("hidden"); // Add a hidden class initially
+      this.observer.observe(section);
     });
   }
 
   handleIntersect(entries) {
     entries.forEach((entry) => {
+      console.log("Intersection observed:", entry.target); // Debugging
       if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = "translateY(0)";
-        this.observer.unobserve(entry.target); // Stop observing once animated
+        entry.target.classList.add("visible");
+        entry.target.classList.remove("hidden");
+        this.observer.unobserve(entry.target); // Stop observing after animation
       }
     });
   }
 }
 
-// Export the component for reuse
 export default ScrollAnimation;

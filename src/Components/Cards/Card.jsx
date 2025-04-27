@@ -1,14 +1,9 @@
-import {
-  CardContainer,
-  BaseIcon,
-  BaseButtonList,
-  BaseButtonItem,
-} from "../Styles/CardStyles";
+import { BaseIcon, BaseButtonList, BaseButtonItem } from "../Styles/CardStyles";
 import { OpenLink } from "../Buttons/OpenLink";
 
 export const Card = ({ icon, name, description, netlify, github }) => {
   return (
-    <CardContainer className="card">
+    <>
       <BaseIcon icon={["fas", icon]} size="2x" className="project-icons" />
       <h3>{name}</h3>
       <p>{description}</p>
@@ -20,6 +15,6 @@ export const Card = ({ icon, name, description, netlify, github }) => {
           <OpenLink url={github} buttonText="Github" />
         </BaseButtonItem>
       </BaseButtonList>
-    </CardContainer>
+    </>
   );
 };

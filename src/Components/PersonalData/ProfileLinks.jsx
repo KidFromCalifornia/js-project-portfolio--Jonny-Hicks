@@ -22,7 +22,7 @@ const IconList = styled.li`
 `;
 
 const IconLinkA = styled.a`
-  font-size: 2;
+  font-size: 2rem;
   font-weight: 600;
 
   svg {
@@ -39,7 +39,8 @@ const IconLinkA = styled.a`
           ? "var(--color-neutral)"
           : "var(--color-accent)"};
     }
-    &:hover svg path {
+
+    &:hover path {
       fill: ${(props) =>
         props.$variant === "white"
           ? "var(--color-accent)"

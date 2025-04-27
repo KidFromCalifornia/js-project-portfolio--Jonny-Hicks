@@ -42,7 +42,6 @@ const FooterBackgroundText = styled.div`
 const ContactsWrapper = styled.div`
   position: absolute;
   bottom: 15%;
-
   z-index: 1;
 
   @media (min-width: 768px) {

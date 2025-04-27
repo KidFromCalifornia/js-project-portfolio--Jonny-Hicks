@@ -1,6 +1,7 @@
 import { UpdateCard } from "../../../Components/Cards/UpdateCard";
 import {
   SectionContainer,
+  CardGroup,
   CardContainer,
 } from "../../../Components/Styles/CardSectionStyling";
 import updates from "../../../Data/Updates.json";
@@ -18,18 +19,23 @@ export const Updates = () => {
     <SectionContainer id="updates">
       <h2>Updates</h2>
 
-      <CardContainer className="updates-container">
+      <CardGroup>
         {updates.updates.map((update, index) => (
-          <div key={index} className="updates-card">
+          <CardContainer
+            key={index}
+            style={{ height: "17rem" }}
+            className="updates-card"
+          >
             <UpdateCard
               icon={update.icon}
               name={update.name}
               description={update.description}
               post={update.post}
+              style={{ height: "20rem" }}
             />
-          </div>
+          </CardContainer>
         ))}
-      </CardContainer>
+      </CardGroup>
     </SectionContainer>
   );
 };

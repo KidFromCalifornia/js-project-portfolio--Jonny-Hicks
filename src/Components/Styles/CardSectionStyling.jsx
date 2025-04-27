@@ -21,12 +21,13 @@ export const SectionContainer = styled.section`
     padding: 0 4rem;
   }
 `;
-export const CardContainer = styled.div`
+export const CardGroup = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
+  height: auto;
   width: 100%;
   gap: 2rem;
   flex-wrap: wrap;
@@ -35,4 +36,19 @@ export const CardContainer = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+export const CardContainer = styled.div`
+  margin: 0.5rem;
+  max-width: 18.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  padding: 0.05rem;
 `;

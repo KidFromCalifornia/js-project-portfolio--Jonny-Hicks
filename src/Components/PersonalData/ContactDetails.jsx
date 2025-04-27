@@ -27,13 +27,25 @@ const ContactHeading = styled.h2`
 const ContactDetails = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
+  margin: 0.5rem 0 0;
   font-size: 1rem;
 
   li {
     margin-bottom: 0.5rem;
-    color: var(--color-accent);
     font-family: var(--font-body);
+
+    a {
+      text-decoration: none;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      font-family: var(--font-body);
+    }
+    &:hover {
+      color: var(--color-neutral);
+      text-decoration: underline;
+      transition: 0.3s;
+      transform: scale(1.02);
+    }
   }
 
   @media (min-width: 768px) {
@@ -46,8 +58,11 @@ export const Contacts = () => {
     <ContactContainer>
       <ContactHeading>Jonny Hicks</ContactHeading>
       <ContactDetails>
-        <li>+46 76 085 08 54</li>
-        <li>hello.jonnyhicks@gmail.com</li>
+        <li>
+          <a href="mailto:hello.jonnyhicks@gmail.com">
+            hello.jonnyhicks@gmail.com
+          </a>
+        </li>
       </ContactDetails>
       <ProfileLinks />
     </ContactContainer>

@@ -11,7 +11,7 @@ const AboutMeContainer = styled.section`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  max-width: 100%;
+  max-width: 1400px;
   z-index: 0;
   gap: 1rem;
   width: 100dvw;

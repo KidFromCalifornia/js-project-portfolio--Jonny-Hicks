@@ -5,7 +5,7 @@ export const ListSections = styled.section`
   flex-direction: column;
   padding: 0 0.5rem;
   justify-content: center;
-
+  margin: 3rem;
   max-width: 100%;
   margin-bottom: 1rem;
 

@@ -14,7 +14,7 @@ if (!Array.isArray(updates.updates)) {
 
 // Ensure updates has a valid structure
 
-export const Updates = () => {
+const Updates = () => {
   return (
     <SectionContainer id="updates">
       <h2>Updates</h2>
@@ -39,3 +39,4 @@ export const Updates = () => {
     </SectionContainer>
   );
 };
+export default Updates;

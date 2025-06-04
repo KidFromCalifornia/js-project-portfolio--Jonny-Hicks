@@ -6,19 +6,18 @@ export const ListSections = styled.section`
   padding: 0 0.5rem;
   justify-content: center;
   margin: 3rem;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
     padding: 0 0.5rem;
     margin-bottom: 2rem;
-    width: 80%;
+    width: 90%;
   }
 
   @media (min-width: 1010px) {
     margin-bottom: 4rem;
-    padding: 0 4rem;
-    width: 80%;
+    width: 90%;
   }
 `;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Contacts } from "../../Components/PersonalData/ContactDetails";
+import { Contacts } from "../../components/PersonalData/ContactDetails";
 
 const FooterContainer = styled.footer`
   position: relative;
@@ -50,7 +50,7 @@ const ContactsWrapper = styled.div`
   }
 `;
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <FooterContainer id="contact">
       <FooterBackgroundText>Lets Chat</FooterBackgroundText>
@@ -60,3 +60,4 @@ export const Footer = () => {
     </FooterContainer>
   );
 };
+export default Footer;

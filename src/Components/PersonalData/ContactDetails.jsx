@@ -53,7 +53,7 @@ const ContactDetails = styled.ul`
   }
 `;
 
-export const Contacts = () => {
+const Contacts = () => {
   return (
     <ContactContainer>
       <ContactHeading>Jonny Hicks</ContactHeading>
@@ -68,3 +68,4 @@ export const Contacts = () => {
     </ContactContainer>
   );
 };
+export default Contacts;

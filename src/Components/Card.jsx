@@ -1,5 +1,5 @@
-import { BaseIcon, BaseButtonList, BaseButtonItem } from "../Styles/CardStyles";
-import { OpenLink } from "../Buttons/OpenLink";
+import { BaseIcon, BaseButtonList, BaseButtonItem } from "../styles/CardStyles";
+import { OpenLink } from "./Buttons/OpenLink";
 
 export const Card = ({ icon, name, description, netlify, github }) => {
   return (

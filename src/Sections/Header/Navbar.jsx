@@ -23,7 +23,7 @@ const NavLinksList = styled.li`
   margin: 0 1rem;
 `;
 
-const NavBarLinks = styled.a`
+const NavBarLinks = styled.link`
   text-decoration: none;
   font-family: var(--a-font);
   color: var(--font-color-light);
@@ -41,27 +41,26 @@ const NavBarLinks = styled.a`
   }
 `;
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <NavLinks>
       <NavLinksList>
-        <NavBarLinks href="#aboutMe">About me</NavBarLinks>
+        <NavBarLinks to="/about">Home</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
-        <NavBarLinks href="#skills">Skills</NavBarLinks>
+        <NavBarLinks to="/about">About me</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
-        <NavBarLinks href="#projects">Projects</NavBarLinks>
+        <NavBarLinks to="/skills">Skills</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
-        <NavBarLinks href="#toolbox">Toolbox</NavBarLinks>
+        <NavBarLinks to="/projects">Projects</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
-        <NavBarLinks href="#updates">Updates</NavBarLinks>
-      </NavLinksList>
-      <NavLinksList>
-        <NavBarLinks href="#contact">Contact</NavBarLinks>
+        <NavBarLinks to="#contact">Contact</NavBarLinks>
       </NavLinksList>
     </NavLinks>
   );
 };
+
+export default Navbar;

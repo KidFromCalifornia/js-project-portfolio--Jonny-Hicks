@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import Navbar from "./Navbar";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
@@ -13,10 +13,11 @@ const HeaderContainer = styled.header`
   background-color: var(--primary-color);
 `;
 
-export const Header = () => {
+const Header = () => {
   return (
     <HeaderContainer className="header">
       <Navbar />
     </HeaderContainer>
   );
 };
+export default Header;

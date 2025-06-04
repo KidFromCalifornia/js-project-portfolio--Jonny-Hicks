@@ -5,9 +5,18 @@ import {
   faFilm,
   faUtensils,
   faCloudSunRain,
+  faCheckSquare,
+  faTicket,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(faUniversalAccess, faFilm, faUtensils, faCloudSunRain);
+library.add(
+  faUniversalAccess,
+  faFilm,
+  faUtensils,
+  faCloudSunRain,
+  faCheckSquare,
+  faTicket
+);
 
 export const BaseIcon = styled(FontAwesomeIcon)`
   margin-bottom: 0.5rem;

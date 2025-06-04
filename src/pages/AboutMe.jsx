@@ -1,5 +1,5 @@
-import { Portrait } from "../../../Components/PersonalData/Portrait";
-import { ProfileLinks } from "../../../Components/PersonalData/ProfileLinks";
+import { Portrait } from "../Components/PersonalData/Portrait";
+import { ProfileLinks } from "./Components/PersonalData/ProfileLinks";
 
 import styled from "styled-components";
 
@@ -111,7 +111,7 @@ const AboutMeH1 = styled.h1`
   }
 `;
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <AboutMeContainer id="aboutMe">
       <AboutText>
@@ -135,3 +135,4 @@ export const AboutMe = () => {
     </AboutMeContainer>
   );
 };
+export default AboutMe;

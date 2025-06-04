@@ -1,12 +1,12 @@
-import { Card } from "../../../Components/Cards/Card";
+import { Card } from "../components/Card";
 import {
   SectionContainer,
   CardGroup,
   CardContainer,
-} from "../../../Components/Styles/CardSectionStyling";
-import projects from "../../../Data/projects.json";
+} from "../styles/cardSectionStyles";
+import projects from "../data/projects.json";
 
-export const Projects = () => {
+const Projects = () => {
   if (!projects || !projects.projects) {
     return <p>Projects data is unavailable.</p>;
   } else
@@ -34,3 +34,4 @@ export const Projects = () => {
       </SectionContainer>
     );
 };
+export default Projects;

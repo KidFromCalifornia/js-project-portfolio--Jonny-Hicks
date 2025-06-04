@@ -3,7 +3,7 @@
     {
       "index": 0,
       "name": "Business site",
-      "icon": "film",
+      "icon": "ticket",
       "tags": ["HTML5", "CSS3", "JavaScript"],
       "description": "My first-ever website, builtindependently with HTML5, CSS3, and basic JavaScript over a three week period. The fictional site focuses on responsive design, clean code. This project helped me build a strong foundation in front-end development and design principles.",
       "netlify": "https://midnight-matinee.netlify.app/",
@@ -20,7 +20,7 @@
     },
     {
       "index": 2,
-      "name": "API Recipe Library API",
+      "name": "Recipe Library API",
       "icon": "utensils",
       "tags": ["HTML5", "CSS3", "JavaScript", "APIs", "github"],
       "description": "A responsive recipe web app built with HTML, CSS, and JavaScript, using the Spoonacular API. Users can search by cuisine, diet, or keyword. Based on a Figma prototype, I customized the UI for mobile. Features include filtering, sorting, and a random recipe generator.",
@@ -29,7 +29,7 @@
     },
     {
       "index": 3,
-      "name": "Acecessibility App",
+      "name": "Accessibility App",
       "icon": "universal-access",
       "tags": [
         "HTML5",
@@ -40,9 +40,47 @@
         "github",
         "accessibility"
       ],
-      "description": "Built with semantic HTML, responsive CSS, and TypeScript with WCAG starards. this app features full keyboard navigation for inclusivity. Collaborated with a team on planning and implementation, focusing on clean, accessible code and intuitive UI/UX design.",
+      "description": "Built with semantic HTML, responsive CSS, and TypeScript with WCAG standards. This app features full keyboard navigation for inclusivity. Collaborated with a team on planning and implementation, focusing on clean, accessible code and intuitive UI/UX design.",
       "netlify": "https://fire2accessibility.netlify.app/",
       "github": "https://github.com/KidFromCalifornia/js-project-accessibility"
+    },
+    {
+      "index": 4,
+      "name": "Zustand To-do app",
+      "icon": "check-square",
+      "tags": [
+        "React",
+        "JavaScript",
+        "Styled-components",
+        "zustand",
+        "accessibility",
+        "responsive",
+        "todo",
+        "CSS3"
+      ],
+      "description": "A reusable React component for displaying a category to-do task. It shows the task text, a checkbox to toggle completion, and a button to remove the task. Uses Zustand for state management, styled-components for styling, and includes accessibility features such as aria-labels. Handles and visually indicates completed tasks with a line-through.",
+      "netlify": "https://racetodo.netlify.app/",
+      "github": "https://github.com/KidFromCalifornia/js-project-todo-Jonny-Hicks"
+    },
+
+    {
+      "index": 5,
+      "name": "React Movie App",
+      "icon": "film",
+      "tags": [
+        "React",
+        "JavaScript",
+        "Styled-components",
+        "TMDB API",
+        "github",
+        "responsive",
+        "react-router",
+        "accessibility",
+        "CSS3"
+      ],
+      "description": "A 1990s-themed movie browser built with React and styled-components. Users can browse movies, view detailed info (trailers, genres, ratings, etc.), and navigate between the main list and detail pages. Features dynamic navigation, responsive design, and data from The Movie Database API.",
+      "netlify": "https://watch90s.netlify.app/",
+      "github": "https://github.com/KidFromCalifornia/js-project-movies"
     }
   ]
 }

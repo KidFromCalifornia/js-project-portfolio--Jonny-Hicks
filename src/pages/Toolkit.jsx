@@ -10,7 +10,7 @@ import {
   ListContainer,
 } from "../../../Components/Styles/ListsSectionStyles";
 
-export const ToolkitSection = () => {
+const ToolkitSection = () => {
   return (
     <ListSections id="toolbox">
       <h2>Toolkit</h2>
@@ -24,3 +24,5 @@ export const ToolkitSection = () => {
     </ListSections>
   );
 };
+
+export default ToolkitSection;

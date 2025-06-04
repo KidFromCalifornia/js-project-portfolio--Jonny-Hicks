@@ -1,5 +1,5 @@
-import { BaseButtonList, BaseButtonItem } from "../Styles/CardStyles.jsx";
-import { OpenLink } from "../Buttons/OpenLink.jsx";
+import { BaseButtonList, BaseButtonItem } from "../styles/CardStyles.jsx";
+import { OpenLink } from "./Buttons/OpenLink.jsx";
 
 export const UpdateCard = ({ name, description, post }) => {
   return (

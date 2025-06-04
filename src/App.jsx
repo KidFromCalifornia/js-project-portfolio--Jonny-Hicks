@@ -1,27 +1,22 @@
-import "./index.css";
-import { Header } from "./Sections/Header/Head";
-import { AboutMe } from "./Sections/MainBody/About/AboutMe";
-import { Skills } from "./Sections/MainBody/Skills/Skills";
-import { Projects } from "./Sections/MainBody/Projects/Projects";
-import { ToolkitSection } from "./Sections/MainBody/Tools/Toolkit";
-import { Updates } from "./Sections/MainBody/Updates/Updates";
-import { Footer } from "./Sections/Footer/FooterContent";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./sections/header/Head";
+import Footer from "./sections/footer/Footer";
+import About from "./pages/About";
+import Skills from "./pages//Skills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-export const App = () => {
-  return (
-    <>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ToolkitSection />
-        <Updates />
-      </main>
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/about" element={<About />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    <Footer />
+  </Router>
+);
 
-      <Footer />
-    </>
-  );
-};
+export default App;

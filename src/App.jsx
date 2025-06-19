@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./sections/header/Head";
+import Header from "./sections/header/Head";
 import Footer from "./sections/footer/Footer";
 import About from "./pages/AboutMe";
 import Skills from "./pages/Skills";
@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const App = () => (
   <Router>
     <ScrollToTop />
-    <Navbar />
+    <Header />
     <main style={{ flex: 1 }}>
       <Routes>
         <Route path="/" element={<About />} />

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Mono+One&display=swap");
 
 :root {
   --color-primary: #0e7147;
@@ -9,6 +9,7 @@
   /* font */
   --font-color-dark: #0e7147;
   --font-color-light: #e4e4e4;
+
   /* shadow */
   --shadow: 0px 2px 3px rgba(25, 35, 27, 0.8);
   --shadow-color: rgba(25, 35, 27, 0.6);
@@ -26,27 +27,21 @@
   display: flex;
   flex-direction: column;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  flex-shrink: 1;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  height: 100%;
-  min-height: 100vh;
 }
 
 html {
-  font-size: 16px; /* Base font size */
+  font-size: 100%; /* 1rem = 16px */
   height: 100dvh;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,7 +49,9 @@ body {
   background: var(--color-primary);
   position: relative;
   overflow-x: hidden;
-  height: 100dvh;
+  height: 100vh;
+  height: 100dvh; /* fallback + modern */
+  scroll-behavior: smooth;
 }
 
 body::before {
@@ -62,69 +59,16 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  overflow-x: hidden;
   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.5%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%20/%3E%3C/filter%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20filter%3D%22url(%23grain)%22%20/%3E%3C/svg%3E")
     repeat;
-  opacity: 0.4; /* Adjust grain intensity */
+  opacity: 0.4;
   pointer-events: none;
   mix-blend-mode: multiply;
+  z-index: 0;
 }
+
 main {
   flex: 1;
-}
-h1 {
-  color: var(--font-color-light);
-  font-family: var(--font-Header);
-  margin: 0rem;
-}
-
-h3,
-h4 {
-  color: var(--color-accent);
-  font-family: var(--font-header-2-3);
-  text-shadow: var(--shadow);
-  margin: 0;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  text-shadow: var(--shadow);
-  margin: 0rem;
-  color: var(--font-color-light);
-  font-family: var(--font-header-2-3);
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-p {
-  color: var(--font-color-light);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  text-shadow: var(--shadow);
-  margin: 0rem;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-
-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,50 +77,69 @@ main {
   width: 100dvw;
 }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-  H4 {
-    font-size: 1.5rem;
-  }
-
-  a:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
+h1 {
+  color: var(--font-color-light);
+  font-family: var(--font-Header);
+  margin: 0;
 }
-@media (min-width: 1024px) {
-  body {
-    font-size: 1.5rem;
-  }
 
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-  H4 {
-    font-size: 1.5rem;
-  }
-
-  a:hover {
-    cursor: pointer;
-    transform: scale(1.5);
-    transition: all 0.3s ease-in-out;
-  }
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: var(--shadow);
+  margin: 0;
+  color: var(--font-color-light);
+  font-family: var(--font-header-2-3);
 }
-footer {
-  width: 100%;
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-family: var(--font-header-2-3);
+  text-shadow: var(--shadow);
+  margin: 0;
 }
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  font-family: var(--font-header-2-3);
+  text-shadow: var(--shadow);
+  margin: 0;
+}
+
+p {
+  color: var(--font-color-light);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-shadow: var(--shadow);
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:focus {
+  outline: 2px dashed var(--color-accent);
+  outline-offset: 4px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Responsive typography + hover scaling */
+@media;

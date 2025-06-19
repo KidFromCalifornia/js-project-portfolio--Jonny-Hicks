@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavLinks = styled.ul`
   display: none;
@@ -23,7 +24,24 @@ const NavLinksList = styled.li`
   margin: 0 1rem;
 `;
 
-const NavBarLinks = styled.link`
+const NavBarLinks = styled(Link)`
+  text-decoration: none;
+  font-family: var(--a-font);
+  color: var(--font-color-light);
+  font-size: 1rem;
+  font-weight: 400;
+  text-shadow: var(--shadow);
+  margin: 0;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--color-accent);
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+  }
+`;
+const ContactLink = styled.a`
   text-decoration: none;
   font-family: var(--a-font);
   color: var(--font-color-light);
@@ -57,7 +75,7 @@ const Navbar = () => {
         <NavBarLinks to="/projects">Projects</NavBarLinks>
       </NavLinksList>
       <NavLinksList>
-        <NavBarLinks to="#contact">Contact</NavBarLinks>
+        <ContactLink href="#contact">Contact</ContactLink>
       </NavLinksList>
     </NavLinks>
   );

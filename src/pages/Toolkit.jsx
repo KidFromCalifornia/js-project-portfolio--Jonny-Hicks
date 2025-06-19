@@ -3,12 +3,8 @@ import {
   Backend,
   Creative,
   Workflow,
-} from "../../../Components/TechLists/Techlists";
-
-import {
-  ListSections,
-  ListContainer,
-} from "../../../Components/Styles/ListsSectionStyles";
+} from "../components/Techlists.jsx";
+import { ListSections, ListContainer } from "../styles/ListsSectionStyles.jsx";
 
 const ToolkitSection = () => {
   return (

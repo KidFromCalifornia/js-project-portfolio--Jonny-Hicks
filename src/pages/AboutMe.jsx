@@ -1,5 +1,5 @@
-import { Portrait } from "../Components/PersonalData/Portrait";
-import { ProfileLinks } from "./Components/PersonalData/ProfileLinks";
+import { Portrait } from "../components/PersonalData/Portrait";
+import { ProfileLinks } from "../components/PersonalData/ProfileLinks";
 
 import styled from "styled-components";
 

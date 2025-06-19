@@ -1,10 +1,11 @@
-import { UpdateCard } from "../../../Components/Cards/UpdateCard";
+import { UpdateCard } from "../components/UpdateCard.jsx";
 import {
   SectionContainer,
   CardGroup,
   CardContainer,
-} from "../../../Components/Styles/CardSectionStyling";
-import updates from "../../../Data/Updates.json";
+} from "../styles/CardSectionStyling.jsx";
+import updates from "../data/Updates.json";
+
 // Validate updates structure
 if (!Array.isArray(updates.updates)) {
   console.error(

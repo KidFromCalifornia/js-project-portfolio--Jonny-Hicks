@@ -1,4 +1,4 @@
-import { Code, Toolkit, Upcoming, More } from "../components/SkillsLists.jsx";
+import { Code, Toolkit, Upcoming, More } from "../components/SkillsList.jsx";
 
 import { ListSections, ListContainer } from "../styles/ListsSectionStyles.jsx";
 

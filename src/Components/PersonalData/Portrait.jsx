@@ -1,6 +1,6 @@
 import photo from "../../assets/img/PP-JHicks.png";
 import styled from "styled-components";
-import { SvgShadow } from "../Styles/SvgShadow";
+import { SvgShadow } from "../../styles/SvgShadow.jsx";
 
 const PhotoContainer = styled.div`
   display: flex;

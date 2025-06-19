@@ -1,4 +1,4 @@
-import { Column, ListGroup, ListItem } from "../Styles/ListStyles";
+import { Column, ListGroup, ListItem } from "../styles/ListStyles";
 
 export const Code = () => {
   return (

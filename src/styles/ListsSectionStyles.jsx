@@ -4,10 +4,11 @@ export const ListSections = styled.section`
   display: flex;
   flex-direction: column;
   padding: 0 0.5rem;
-  justify-content: center;
-  margin: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 4rem;
   width: 100%;
-  margin-bottom: 1rem;
 
   @media (min-width: 768px) {
     padding: 0 0.5rem;

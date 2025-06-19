@@ -10,6 +10,7 @@ export const SectionContainer = styled.section`
   flex-wrap: wrap;
   padding: 0 0.5rem;
   margin-bottom: 2rem;
+  margin-top: 4rem;
 
   @media (min-width: 768px) {
     padding: 0 0.5rem;

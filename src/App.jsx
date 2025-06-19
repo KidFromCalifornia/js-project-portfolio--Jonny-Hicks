@@ -1,20 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./sections/header/Head";
 import Footer from "./sections/footer/Footer";
-import About from "./pages/About";
-import Skills from "./pages//Skills";
+import About from "./pages/AboutMe";
+import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import "./index.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => (
   <Router>
+    <ScrollToTop />
     <Navbar />
-    <Routes>
-      <Route path="/about" element={<About />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <main style={{ flex: 1 }}>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </main>
     <Footer />
   </Router>
 );

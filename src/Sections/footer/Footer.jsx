@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Contacts } from "../../components/PersonalData/ContactDetails";
+import Contacts from "../../components/PersonalData/ContactDetails.jsx";
 
 const FooterContainer = styled.footer`
   position: relative;

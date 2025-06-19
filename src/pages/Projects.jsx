@@ -3,7 +3,7 @@ import {
   SectionContainer,
   CardGroup,
   CardContainer,
-} from "../styles/cardSectionStyles";
+} from "../styles/CardSectionStyling.jsx";
 import projects from "../data/projects.json";
 
 const Projects = () => {

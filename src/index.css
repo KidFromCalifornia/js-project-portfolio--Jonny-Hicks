@@ -21,6 +21,11 @@
   --button-font: "IBM Plex Mono", sans-serif;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 *,
 *::before,
 *::after {
@@ -32,15 +37,24 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  height: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+  height: 100dvh;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background: var(--color-primary);
   position: relative;
   overflow-x: hidden;
+  height: 100dvh;
 }
 
 body::before {
@@ -58,7 +72,9 @@ body::before {
   pointer-events: none;
   mix-blend-mode: multiply;
 }
-
+main {
+  flex: 1;
+}
 h1 {
   color: var(--font-color-light);
   font-family: var(--font-Header);
@@ -160,4 +176,7 @@ main {
     transform: scale(1.5);
     transition: all 0.3s ease-in-out;
   }
+}
+footer {
+  width: 100%;
 }
